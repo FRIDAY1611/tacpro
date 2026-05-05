@@ -1,0 +1,180 @@
+{
+  "common": {
+    "siteName": "TACPRO",
+    "tagline": "Professional Tactical Apparel Factory",
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "cases": "Client Cases",
+      "blog": "Blog",
+      "about": "About Us",
+      "contact": "Contact",
+      "inquiry": "Get Quote"
+    },
+    "buttons": {
+      "learnMore": "Learn More",
+      "inquireNow": "Get a Quote",
+      "submit": "Submit",
+      "viewAll": "View All Products",
+      "viewDetails": "View Details",
+      "downloadCatalog": "Download Catalog"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Tactical Apparel & Gear Factory",
+      "subtitle": "Serving Military, Police, Outdoor & Rescue",
+      "description": "ISO-certified manufacturer of tactical vests, protective helmets, tactical gloves, combat uniforms, and rescue apparel. OEM/ODM for global clients."
+    },
+    "featured": {
+      "title": "Featured Products",
+      "subtitle": "Core apparel and gear trusted by military, law enforcement, and rescue professionals worldwide"
+    },
+    "about": {
+      "title": "Why Choose TACPRO",
+      "subtitle": "Your reliable tactical apparel manufacturing partner",
+      "features": {
+        "factory": {
+          "title": "Own Factory",
+          "desc": "Direct sourcing from our production facility with full traceability"
+        },
+        "quality": {
+          "title": "Quality Control",
+          "desc": "Multi-stage QC: fabric inspection, in-process checks, final AQL inspection"
+        },
+        "custom": {
+          "title": "OEM/ODM Expert",
+          "desc": "Custom fabrics, colors, sizing, labeling, and packaging to your spec"
+        },
+        "export": {
+          "title": "Export Experience",
+          "desc": "Compliance with CE, NIJ, EN standards; serving 40+ countries"
+        }
+      }
+    },
+    "trust": {
+      "title": "Trusted Certifications",
+      "subtitle": "Factory audits and product certifications for global markets"
+    },
+    "cta": {
+      "title": "Ready to Order Tactical Apparel?",
+      "desc": "Contact us for product catalogs, samples, and bulk quotations",
+      "button": "Request a Quote"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Professional tactical apparel and gear for military, police, outdoor, and rescue applications",
+    "categories": {
+      "all": "All Products",
+      "military-police-gear": "Military & Police Gear",
+      "outdoor-gear": "Outdoor Gear",
+      "rescue-gear": "Rescue Gear"
+    },
+    "card": {
+      "inquire": "Inquire",
+      "details": "Details",
+      "moq": "MOQ"
+    },
+    "detail": {
+      "specifications": "Specifications",
+      "description": "Description",
+      "customization": "Customization Available",
+      "related": "Related Products",
+      "inquire": "Request Quote for This Product",
+      "drawing": "Technical Drawing"
+    }
+  },
+  "cases": {
+    "title": "Client Cases",
+    "subtitle": "Real-world applications and partnerships with military, police, and rescue organizations",
+    "scenes": {
+      "military": "Military Operations",
+      "police": "Law Enforcement",
+      "rescue": "Rescue Missions",
+      "outdoor": "Outdoor Training"
+    }
+  },
+  "blog": {
+    "title": "Insights",
+    "subtitle": "Industry knowledge, material technology, and procurement guides for tactical apparel",
+    "readMore": "Read More"
+  },
+  "about": {
+    "title": "About TACPRO",
+    "subtitle": "Your Trusted Tactical Apparel Manufacturing Partner",
+    "story": {
+      "title": "Company Profile",
+      "p1": "TACPRO is a professional tactical apparel manufacturer specializing in tactical vests, protective helmets, tactical gloves, combat uniforms, and rescue clothing for military, police, and outdoor markets.",
+      "p2": "With years of export experience and a fully owned production facility, we provide OEM/ODM services with strict quality control from raw material inspection to finished product delivery."
+    },
+    "factory": {
+      "title": "Our Factory",
+      "subtitle": "In-house manufacturing with full quality control",
+      "stats": {
+        "area": "Production Area",
+        "workers": "Skilled Workers",
+        "capacity": "Monthly Capacity",
+        "countries": "Export Countries"
+      }
+    },
+    "quality": {
+      "title": "Quality Management",
+      "subtitle": "From fabric to finished garment",
+      "steps": {
+        "fabric": "Fabric Testing",
+        "cutting": "Precision Cutting",
+        "sewing": "Sewing & Assembly",
+        "inspection": "Final Inspection"
+      }
+    },
+    "certificates": {
+      "title": "Certifications",
+      "subtitle": "Standards compliance for global markets"
+    }
+  },
+  "inquiry": {
+    "title": "Request a Quote",
+    "subtitle": "Fill out the form and our team will respond within 24 hours",
+    "form": {
+      "companyName": "Company Name",
+      "contactName": "Contact Person",
+      "email": "Email Address",
+      "phone": "Phone / WhatsApp",
+      "country": "Country",
+      "address": "Address",
+      "message": "Your Requirements",
+      "messagePlaceholder": "Please describe item, quantity, fabric requirements, target price, delivery time, etc.",
+      "targetDate": "Target Delivery Date",
+      "products": "Products of Interest",
+      "submit": "Submit Request"
+    },
+    "success": {
+      "title": "Thank You!",
+      "message": "Your request has been submitted successfully. We will contact you within 24 hours.",
+      "inquiryNo": "Your Reference Number"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch for catalogs, samples, and quotations",
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "Business Hours",
+      "weekday": "Monday - Friday",
+      "weekend": "Saturday - Sunday"
+    }
+  },
+  "footer": {
+    "description": "Professional tactical apparel manufacturer for military, police, outdoor, and rescue markets. OEM/ODM welcome.",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "contact": "Contact",
+    "copyright": "© {year} TACPRO. All rights reserved."
+  }
+}

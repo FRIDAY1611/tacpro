@@ -1,0 +1,160 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          String     @id @default(cuid())
+  slug        String     @unique
+  sortOrder   Int        @default(0)
+
+  nameEn      String
+  nameZh      String
+  descriptionEn String?
+  descriptionZh String?
+
+  products    Product[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([slug])
+}
+
+model Product {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  sku             String?   @unique
+  isActive        Boolean   @default(true)
+  isFeatured      Boolean   @default(false)
+  sortOrder       Int       @default(0)
+
+  nameEn          String
+  nameZh          String
+  descriptionEn   String?
+  descriptionZh   String?
+  shortDescEn     String?
+  shortDescZh     String?
+
+  specifications  String?
+
+  mainImage       String?
+  images          String?
+
+  isCustomizable  Boolean   @default(true)
+  moq             Int?
+  drawing         String?
+
+  metaTitleEn     String?
+  metaTitleZh     String?
+  metaDescEn      String?
+  metaDescZh      String?
+
+  categoryId      String?
+  category        Category? @relation(fields: [categoryId], references: [id])
+  inquiryItems    InquiryItem[]
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([slug])
+  @@index([categoryId])
+  @@index([isActive, isFeatured])
+}
+
+model Inquiry {
+  id              String        @id @default(cuid())
+  inquiryNo       String        @unique
+  status          InquiryStatus @default(PENDING)
+
+  companyName     String
+  contactName     String
+  email           String
+  phone           String?
+  country         String?
+  address         String?
+
+  message         String?
+  targetDate      String?
+  source          String?
+
+  internalNotes   String?
+
+  items           InquiryItem[]
+
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([inquiryNo])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model InquiryItem {
+  id              String    @id @default(cuid())
+  inquiryId       String
+  productId       String?
+
+  quantity        Int?
+  unit            String?
+  requirements    String?
+
+  productNameEn   String
+  productNameZh   String
+  productSku      String?
+
+  inquiry         Inquiry   @relation(fields: [inquiryId], references: [id], onDelete: Cascade)
+  product         Product?  @relation(fields: [productId], references: [id])
+
+  @@index([inquiryId])
+}
+
+model Certificate {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  sortOrder       Int       @default(0)
+
+  nameEn          String
+  nameZh          String
+  issuer          String?
+  issueDate       String?
+  expiryDate      String?
+
+  image           String?
+  descriptionEn   String?
+  descriptionZh   String?
+
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([slug])
+}
+
+model SiteConfig {
+  id              String    @id @default(cuid())
+  key             String    @unique
+  valueEn         String?
+  valueZh         String?
+  updatedAt       DateTime  @updatedAt
+}
+
+model AdminUser {
+  id              String    @id @default(cuid())
+  email           String    @unique
+  passwordHash    String
+  name            String?
+  role            String    @default("admin")
+  lastLoginAt     DateTime?
+  createdAt       DateTime  @default(now())
+}
+
+enum InquiryStatus {
+  PENDING
+  PROCESSING
+  QUOTED
+  CLOSED
+  SPAM
+}

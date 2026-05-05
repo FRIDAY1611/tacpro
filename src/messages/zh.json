@@ -1,0 +1,180 @@
+{
+  "common": {
+    "siteName": "TACPRO",
+    "tagline": "专业战术服装工厂",
+    "nav": {
+      "home": "首页",
+      "products": "产品中心",
+      "cases": "客户案例",
+      "blog": "博客",
+      "about": "关于我们",
+      "contact": "联系我们",
+      "inquiry": "获取报价"
+    },
+    "buttons": {
+      "learnMore": "了解更多",
+      "inquireNow": "获取报价",
+      "submit": "提交",
+      "viewAll": "查看全部产品",
+      "viewDetails": "查看详情",
+      "downloadCatalog": "下载产品目录"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "战术服装与装备工厂",
+      "subtitle": "服务军警、户外与救援领域",
+      "description": "ISO认证制造商，专业生产战术背心、防护头盔、战术手套、作战服及救援服装。承接全球OEM/ODM订单。"
+    },
+    "featured": {
+      "title": "主推产品",
+      "subtitle": "军警及救援人员信赖的核心服装与装备"
+    },
+    "about": {
+      "title": "为什么选择TACPRO",
+      "subtitle": "您可靠的战术服装制造合作伙伴",
+      "features": {
+        "factory": {
+          "title": "自有工厂",
+          "desc": "直接对接生产基地，全流程可追溯"
+        },
+        "quality": {
+          "title": "质量管控",
+          "desc": "多阶段品控：面料检验、过程巡检、成品AQL验货"
+        },
+        "custom": {
+          "title": "OEM/ODM专家",
+          "desc": "支持定制面料、颜色、尺码、吊牌及包装"
+        },
+        "export": {
+          "title": "出口经验",
+          "desc": "符合CE、NIJ、EN等标准；出口40余个国家"
+        }
+      }
+    },
+    "trust": {
+      "title": "权威认证",
+      "subtitle": "工厂审核与产品认证，满足全球市场准入要求"
+    },
+    "cta": {
+      "title": "准备采购战术服装？",
+      "desc": "联系我们获取产品目录、样衣及批量报价",
+      "button": "请求报价"
+    }
+  },
+  "products": {
+    "title": "产品中心",
+    "subtitle": "专业战术服装与装备，适用于军警、户外及救援场景",
+    "categories": {
+      "all": "全部产品",
+      "military-police-gear": "军警防护装备",
+      "outdoor-gear": "户外装备",
+      "rescue-gear": "救援装备"
+    },
+    "card": {
+      "inquire": "询盘",
+      "details": "详情",
+      "moq": "起订量"
+    },
+    "detail": {
+      "specifications": "产品规格",
+      "description": "产品描述",
+      "customization": "支持定制",
+      "related": "相关产品",
+      "inquire": "询盘此产品",
+      "drawing": "技术图纸"
+    }
+  },
+  "cases": {
+    "title": "客户案例",
+    "subtitle": "与军警、救援组织的真实应用场景及合作案例",
+    "scenes": {
+      "military": "军事作战",
+      "police": "警务执法",
+      "rescue": "救援任务",
+      "outdoor": "户外训练"
+    }
+  },
+  "blog": {
+    "title": "行业洞察",
+    "subtitle": "战术服装行业知识、材料技术与采购指南",
+    "readMore": "阅读更多"
+  },
+  "about": {
+    "title": "关于TACPRO",
+    "subtitle": "您值得信赖的战术服装制造合作伙伴",
+    "story": {
+      "title": "公司简介",
+      "p1": "TACPRO是一家专业战术服装制造商，专注于为军警及户外市场提供战术背心、防护头盔、战术手套、作战服及救援服装。",
+      "p2": "凭借多年出口经验及自有生产基地，我们提供从原材料检验到成品交付的全流程OEM/ODM服务，严格执行品质管控。"
+    },
+    "factory": {
+      "title": "工厂实力",
+      "subtitle": "自主生产，全程品控",
+      "stats": {
+        "area": "生产面积",
+        "workers": "技术工人",
+        "capacity": "月产能",
+        "countries": "出口国家"
+      }
+    },
+    "quality": {
+      "title": "质量管理体系",
+      "subtitle": "从面料到成衣的每一道工序",
+      "steps": {
+        "fabric": "面料检测",
+        "cutting": "精密裁剪",
+        "sewing": "缝制组装",
+        "inspection": "成品验货"
+      }
+    },
+    "certificates": {
+      "title": "资质认证",
+      "subtitle": "符合全球市场准入标准"
+    }
+  },
+  "inquiry": {
+    "title": "请求报价",
+    "subtitle": "填写下方表单，我们将在24小时内回复",
+    "form": {
+      "companyName": "公司名称",
+      "contactName": "联系人",
+      "email": "电子邮箱",
+      "phone": "电话 / WhatsApp",
+      "country": "国家/地区",
+      "address": "详细地址",
+      "message": "需求描述",
+      "messagePlaceholder": "请描述产品、数量、面料要求、目标价格、交货期等",
+      "targetDate": "期望交期",
+      "products": "意向产品",
+      "submit": "提交请求"
+    },
+    "success": {
+      "title": "提交成功！",
+      "message": "您的请求已成功提交，我们将在24小时内与您联系。",
+      "inquiryNo": "您的参考编号"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "获取产品目录、样衣及报价",
+    "info": {
+      "address": "地址",
+      "phone": "电话",
+      "email": "邮箱",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "营业时间",
+      "weekday": "周一至周五",
+      "weekend": "周六至周日"
+    }
+  },
+  "footer": {
+    "description": "专业战术服装制造商，服务军警、户外及救援市场。欢迎OEM/ODM合作。",
+    "quickLinks": "快速链接",
+    "products": "产品中心",
+    "contact": "联系方式",
+    "copyright": "© {year} TACPRO 版权所有"
+  }
+}

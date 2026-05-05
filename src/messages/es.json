@@ -1,0 +1,180 @@
+{
+  "common": {
+    "siteName": "TACPRO",
+    "tagline": "Fábrica de Ropa Táctica Profesional",
+    "nav": {
+      "home": "Inicio",
+      "products": "Productos",
+      "cases": "Casos de Clientes",
+      "blog": "Blog",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "inquiry": "Cotización"
+    },
+    "buttons": {
+      "learnMore": "Saber Más",
+      "inquireNow": "Solicitar Cotización",
+      "submit": "Enviar",
+      "viewAll": "Ver Todos los Productos",
+      "viewDetails": "Ver Detalles",
+      "downloadCatalog": "Descargar Catálogo"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Fábrica de Ropa y Equipo Táctico",
+      "subtitle": "Servicio Militar, Policial, Outdoor y Rescate",
+      "description": "Fabricante certificado ISO de chalecos tácticos, cascos protectores, guantes tácticos, uniformes de combate y ropa de rescate. OEM/ODM para clientes globales."
+    },
+    "featured": {
+      "title": "Productos Destacados",
+      "subtitle": "Ropa y equipo esencial confiado por profesionales militares, policiales y de rescate en todo el mundo"
+    },
+    "about": {
+      "title": "¿Por Qué Elegir TACPRO?",
+      "subtitle": "Su socio confiable en la fabricación de ropa táctica",
+      "features": {
+        "factory": {
+          "title": "Fábrica Propia",
+          "desc": "Abastecimiento directo desde nuestra instalación de producción con trazabilidad completa"
+        },
+        "quality": {
+          "title": "Control de Calidad",
+          "desc": "Control multietapa: inspección de telas, verificación en proceso, inspección final AQL"
+        },
+        "custom": {
+          "title": "Experto OEM/ODM",
+          "desc": "Telas, colores, tallas, etiquetado y empaques personalizados según sus especificaciones"
+        },
+        "export": {
+          "title": "Experiencia en Exportación",
+          "desc": "Cumplimiento con normas CE, NIJ, EN; atendiendo a más de 40 países"
+        }
+      }
+    },
+    "trust": {
+      "title": "Certificaciones de Confianza",
+      "subtitle": "Auditorías de fábrica y certificaciones de producto para mercados globales"
+    },
+    "cta": {
+      "title": "¿Listo para Ordenar Ropa Táctica?",
+      "desc": "Contáctenos para catálogos, muestras y cotizaciones al por mayor",
+      "button": "Solicitar Cotización"
+    }
+  },
+  "products": {
+    "title": "Nuestros Productos",
+    "subtitle": "Ropa y equipo táctico profesional para aplicaciones militares, policiales, outdoor y de rescate",
+    "categories": {
+      "all": "Todos los Productos",
+      "military-police-gear": "Equipo Militar y Policial",
+      "outdoor-gear": "Equipo Outdoor",
+      "rescue-gear": "Equipo de Rescate"
+    },
+    "card": {
+      "inquire": "Consultar",
+      "details": "Detalles",
+      "moq": "Cantidad Mínima"
+    },
+    "detail": {
+      "specifications": "Especificaciones",
+      "description": "Descripción",
+      "customization": "Personalización Disponible",
+      "related": "Productos Relacionados",
+      "inquire": "Solicitar Cotización para Este Producto",
+      "drawing": "Dibujo Técnico"
+    }
+  },
+  "cases": {
+    "title": "Casos de Clientes",
+    "subtitle": "Aplicaciones en el mundo real y alianzas con organizaciones militares, policiales y de rescate",
+    "scenes": {
+      "military": "Operaciones Militares",
+      "police": "Aplicación de la Ley",
+      "rescue": "Misiones de Rescate",
+      "outdoor": "Entrenamiento Outdoor"
+    }
+  },
+  "blog": {
+    "title": "Conocimientos",
+    "subtitle": "Conocimiento de la industria, tecnología de materiales y guías de adquisición para ropa táctica",
+    "readMore": "Leer Más"
+  },
+  "about": {
+    "title": "Sobre TACPRO",
+    "subtitle": "Su Socio Confiable en Fabricación de Ropa Táctica",
+    "story": {
+      "title": "Perfil de la Empresa",
+      "p1": "TACPRO es un fabricante profesional de ropa táctica especializado en chalecos tácticos, cascos protectores, guantes tácticos, uniformes de combate y ropa de rescate para los mercados militar, policial y outdoor.",
+      "p2": "Con años de experiencia en exportación y una instalación de producción propia, ofrecemos servicios OEM/ODM con estricto control de calidad desde la inspección de materias primas hasta la entrega del producto terminado."
+    },
+    "factory": {
+      "title": "Nuestra Fábrica",
+      "subtitle": "Fabricación interna con control de calidad completo",
+      "stats": {
+        "area": "Área de Producción",
+        "workers": "Trabajadores Calificados",
+        "capacity": "Capacidad Mensual",
+        "countries": "Países de Exportación"
+      }
+    },
+    "quality": {
+      "title": "Gestión de Calidad",
+      "subtitle": "De la tela a la prenda terminada",
+      "steps": {
+        "fabric": "Prueba de Telas",
+        "cutting": "Corte de Precisión",
+        "sewing": "Costura y Ensamblaje",
+        "inspection": "Inspección Final"
+      }
+    },
+    "certificates": {
+      "title": "Certificaciones",
+      "subtitle": "Cumplimiento de estándares para mercados globales"
+    }
+  },
+  "inquiry": {
+    "title": "Solicitar Cotización",
+    "subtitle": "Complete el formulario y nuestro equipo responderá en 24 horas",
+    "form": {
+      "companyName": "Nombre de la Empresa",
+      "contactName": "Persona de Contacto",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono / WhatsApp",
+      "country": "País",
+      "address": "Dirección",
+      "message": "Sus Requisitos",
+      "messagePlaceholder": "Describa el artículo, cantidad, requisitos de tela, precio objetivo, tiempo de entrega, etc.",
+      "targetDate": "Fecha de Entrega Objetivo",
+      "products": "Productos de Interés",
+      "submit": "Enviar Solicitud"
+    },
+    "success": {
+      "title": "¡Gracias!",
+      "message": "Su solicitud ha sido enviada exitosamente. Nos pondremos en contacto en 24 horas.",
+      "inquiryNo": "Su Número de Referencia"
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "subtitle": "Póngase en contacto para catálogos, muestras y cotizaciones",
+    "info": {
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "Horario Comercial",
+      "weekday": "Lunes - Viernes",
+      "weekend": "Sábado - Domingo"
+    }
+  },
+  "footer": {
+    "description": "Fabricante profesional de ropa táctica para mercados militar, policial, outdoor y de rescate. OEM/ODM bienvenido.",
+    "quickLinks": "Enlaces Rápidos",
+    "products": "Productos",
+    "contact": "Contacto",
+    "copyright": "© {year} TACPRO. Todos los derechos reservados."
+  }
+}

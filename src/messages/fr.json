@@ -1,0 +1,180 @@
+{
+  "common": {
+    "siteName": "TACPRO",
+    "tagline": "Usine Professionnelle de Vêtements Tactiques",
+    "nav": {
+      "home": "Accueil",
+      "products": "Produits",
+      "cases": "Études de Cas",
+      "blog": "Blog",
+      "about": "À Propos",
+      "contact": "Contact",
+      "inquiry": "Devis"
+    },
+    "buttons": {
+      "learnMore": "En Savoir Plus",
+      "inquireNow": "Demander un Devis",
+      "submit": "Soumettre",
+      "viewAll": "Voir Tous les Produits",
+      "viewDetails": "Voir les Détails",
+      "downloadCatalog": "Télécharger le Catalogue"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Usine de Vêtements et Équipements Tactiques",
+      "subtitle": "Au Service des Forces Armées, Police, Outdoor et Secours",
+      "description": "Fabricant certifié ISO de gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et vêtements de secours. OEM/ODM pour clients internationaux."
+    },
+    "featured": {
+      "title": "Produits en Vedette",
+      "subtitle": "Vêtements et équipements essentiels approuvés par les professionnels militaires, policiers et de secours du monde entier"
+    },
+    "about": {
+      "title": "Pourquoi Choisir TACPRO",
+      "subtitle": "Votre partenaire de confiance dans la fabrication de vêtements tactiques",
+      "features": {
+        "factory": {
+          "title": "Usine Propre",
+          "desc": "Approvisionnement direct depuis notre installation de production avec traçabilité complète"
+        },
+        "quality": {
+          "title": "Contrôle Qualité",
+          "desc": "Contrôle multi-étapes : inspection des tissus, vérification en cours, inspection finale AQL"
+        },
+        "custom": {
+          "title": "Expert OEM/ODM",
+          "desc": "Tissus, couleurs, tailles, étiquetage et emballage personnalisés selon vos spécifications"
+        },
+        "export": {
+          "title": "Expérience d'Exportation",
+          "desc": "Conformité aux normes CE, NIJ, EN ; desservant plus de 40 pays"
+        }
+      }
+    },
+    "trust": {
+      "title": "Certifications de Confiance",
+      "subtitle": "Audits d'usine et certifications produits pour les marchés mondiaux"
+    },
+    "cta": {
+      "title": "Prêt à Commander des Vêtements Tactiques ?",
+      "desc": "Contactez-nous pour des catalogues, des échantillons et des devis en gros",
+      "button": "Demander un Devis"
+    }
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Vêtements et équipements tactiques professionnels pour les applications militaires, policières, outdoor et de secours",
+    "categories": {
+      "all": "Tous les Produits",
+      "military-police-gear": "Équipement Militaire et Policier",
+      "outdoor-gear": "Équipement Outdoor",
+      "rescue-gear": "Équipement de Secours"
+    },
+    "card": {
+      "inquire": "Demander",
+      "details": "Détails",
+      "moq": "Quantité Minimale"
+    },
+    "detail": {
+      "specifications": "Spécifications",
+      "description": "Description",
+      "customization": "Personnalisation Disponible",
+      "related": "Produits Connexes",
+      "inquire": "Demander un Devis pour ce Produit",
+      "drawing": "Dessin Technique"
+    }
+  },
+  "cases": {
+    "title": "Études de Cas",
+    "subtitle": "Applications réelles et partenariats avec des organisations militaires, policières et de secours",
+    "scenes": {
+      "military": "Opérations Militaires",
+      "police": "Forces de l'Ordre",
+      "rescue": "Missions de Secours",
+      "outdoor": "Entraînement Outdoor"
+    }
+  },
+  "blog": {
+    "title": "Connaissances",
+    "subtitle": "Connaissances industrielles, technologie des matériaux et guides d'achat pour les vêtements tactiques",
+    "readMore": "Lire la Suite"
+  },
+  "about": {
+    "title": "À Propos de TACPRO",
+    "subtitle": "Votre Partenaire de Confiance dans la Fabrication de Vêtements Tactiques",
+    "story": {
+      "title": "Profil de l'Entreprise",
+      "p1": "TACPRO est un fabricant professionnel de vêtements tactiques spécialisé dans les gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et vêtements de secours pour les marchés militaire, policier et outdoor.",
+      "p2": "Avec des années d'expérience à l'exportation et une installation de production entièrement détenue, nous fournissons des services OEM/ODM avec un contrôle qualité strict de l'inspection des matières premières à la livraison du produit fini."
+    },
+    "factory": {
+      "title": "Notre Usine",
+      "subtitle": "Fabrication interne avec contrôle qualité complet",
+      "stats": {
+        "area": "Aire de Production",
+        "workers": "Ouvriers Qualifiés",
+        "capacity": "Capacité Mensuelle",
+        "countries": "Pays d'Exportation"
+      }
+    },
+    "quality": {
+      "title": "Gestion de la Qualité",
+      "subtitle": "Du tissu au vêtement fini",
+      "steps": {
+        "fabric": "Test des Tissus",
+        "cutting": "Coupe de Précision",
+        "sewing": "Couture et Assemblage",
+        "inspection": "Inspection Finale"
+      }
+    },
+    "certificates": {
+      "title": "Certifications",
+      "subtitle": "Conformité aux normes pour les marchés mondiaux"
+    }
+  },
+  "inquiry": {
+    "title": "Demander un Devis",
+    "subtitle": "Remplissez le formulaire et notre équipe répondra sous 24 heures",
+    "form": {
+      "companyName": "Nom de l'Entreprise",
+      "contactName": "Personne à Contacter",
+      "email": "Adresse Email",
+      "phone": "Téléphone / WhatsApp",
+      "country": "Pays",
+      "address": "Adresse",
+      "message": "Vos Exigences",
+      "messagePlaceholder": "Veuillez décrire l'article, la quantité, les exigences en tissu, le prix cible, le délai de livraison, etc.",
+      "targetDate": "Date de Livraison Souhaitée",
+      "products": "Produits d'Intérêt",
+      "submit": "Envoyer la Demande"
+    },
+    "success": {
+      "title": "Merci !",
+      "message": "Votre demande a été soumise avec succès. Nous vous contacterons sous 24 heures.",
+      "inquiryNo": "Votre Numéro de Référence"
+    }
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Entrez en contact pour des catalogues, des échantillons et des devis",
+    "info": {
+      "address": "Adresse",
+      "phone": "Téléphone",
+      "email": "Email",
+      "whatsapp": "WhatsApp"
+    },
+    "hours": {
+      "title": "Heures d'Ouverture",
+      "weekday": "Lundi - Vendredi",
+      "weekend": "Samedi - Dimanche"
+    }
+  },
+  "footer": {
+    "description": "Fabricant professionnel de vêtements tactiques pour les marchés militaire, policier, outdoor et de secours. OEM/ODM bienvenue.",
+    "quickLinks": "Liens Rapides",
+    "products": "Produits",
+    "contact": "Contact",
+    "copyright": "© {year} TACPRO. Tous droits réservés."
+  }
+}
