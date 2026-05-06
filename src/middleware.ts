@@ -3,7 +3,9 @@ import { routing } from './i18n/routing'
 
 const intlMiddleware = createMiddleware(routing)
 
-export default function middleware(request: Request) {
+import type { NextRequest } from 'next/server'
+
+export default function middleware(request: NextRequest) {
   const response = intlMiddleware(request)
 
   // Fix: Hostinger reverse proxy leaks internal port 3000 in redirect URLs
