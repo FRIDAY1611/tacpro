@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center">TACPRO Admin</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">WearTac Admin</h1>
         {error && (
           <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-md text-sm">
             {error}
