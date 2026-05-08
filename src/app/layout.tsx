@@ -9,18 +9,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "TACPRO - Professional Tactical Equipment Manufacturer",
-    template: "%s | TACPRO",
+    default: "WearTac - Professional Tactical Equipment Manufacturer",
+    template: "%s | WearTac",
   },
   description: "Leading manufacturer of tactical boots, military backpacks, security equipment, and rescue gear. Quality certified for global markets.",
   keywords: ["tactical equipment", "military boots", "tactical backpacks", "security equipment", "rescue gear", "OEM manufacturer"],
-  authors: [{ name: "TACPRO" }],
-  creator: "TACPRO",
+  authors: [{ name: "WearTac" }],
+  creator: "WearTac",
   openGraph: {
     type: "website",
     locale: "en_US",
     alternateLocale: "zh_CN",
-    siteName: "TACPRO",
+    siteName: "WearTac",
   },
   robots: {
     index: true,
