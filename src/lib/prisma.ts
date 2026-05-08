@@ -5,17 +5,16 @@ const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
 }
 
-const dbUrl = process.env.DATABASE_URL || 'file:./dev.db'
-const dbPath = dbUrl.startsWith('file:')
-  ? path.resolve(process.cwd(), dbUrl.replace('file:', ''))
-  : dbUrl
+const dbUrl = process.env.DATABASE_URL || ile:${path.join(process.cwd(), 'prisma', 'dev.db')}
 
 export const prisma = globalForPrisma.prisma ?? new PrismaClient({
   datasources: {
     db: {
-      url: `file:${dbPath}`,
+      url: dbUrl,
     },
   },
 })
 
-if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
+if (!globalForPrisma.prisma) {
+  globalForPrisma.prisma = prisma
+}
