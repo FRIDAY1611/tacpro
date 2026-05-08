@@ -60,7 +60,7 @@ export function Header({ locale, messages }: HeaderProps) {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white/95 backdrop-blur-md shadow-sm'
-          : 'bg-transparent'
+          : 'bg-gray-900/60 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -70,7 +70,7 @@ export function Header({ locale, messages }: HeaderProps) {
             <span className={`text-2xl font-bold tracking-tight ${
               scrolled ? 'text-gray-900' : 'text-white'
             }`}>
-              TACPRO
+              WearTac
             </span>
           </Link>
 
@@ -102,10 +102,10 @@ export function Header({ locale, messages }: HeaderProps) {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 {locales.map((loc) => (
-                  <DropdownMenuItem key={loc}>
-                    <a href={`/${loc}${pathname !== '/' ? pathname : ''}`}>
+                  <DropdownMenuItem key={loc} asChild>
+                    <Link href={pathname} locale={loc}>
                       {localeNames[loc]}
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
