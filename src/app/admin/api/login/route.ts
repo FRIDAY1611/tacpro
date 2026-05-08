@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
     const { email, password } = body
 
     // Simple authentication - in production, use proper auth
-    if (email === 'admin@tacpro.com' && password === 'admin123') {
+    if (email === 'admin@weartac.com' && password === 'admin123') {
       const cookieStore = await cookies()
       cookieStore.set('admin_session', 'authenticated', {
         httpOnly: true,
