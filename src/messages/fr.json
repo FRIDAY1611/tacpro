@@ -1,13 +1,13 @@
 {
   "common": {
-    "siteName": "TACPRO",
-    "tagline": "Usine Professionnelle de Vêtements Tactiques",
+    "siteName": "WearTac",
+    "tagline": "Usine Professionnelle de V锚tements Tactiques",
     "nav": {
       "home": "Accueil",
       "products": "Produits",
-      "cases": "Études de Cas",
+      "cases": "脡tudes de Cas",
       "blog": "Blog",
-      "about": "À Propos",
+      "about": "脌 Propos",
       "contact": "Contact",
       "inquiry": "Devis"
     },
@@ -16,68 +16,68 @@
       "inquireNow": "Demander un Devis",
       "submit": "Soumettre",
       "viewAll": "Voir Tous les Produits",
-      "viewDetails": "Voir les Détails",
-      "downloadCatalog": "Télécharger le Catalogue"
+      "viewDetails": "Voir les D茅tails",
+      "downloadCatalog": "T茅l茅charger le Catalogue"
     }
   },
   "home": {
     "hero": {
-      "title": "Usine de Vêtements et Équipements Tactiques",
-      "subtitle": "Au Service des Forces Armées, Police, Outdoor et Secours",
-      "description": "Fabricant certifié ISO de gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et vêtements de secours. OEM/ODM pour clients internationaux."
+      "title": "Usine de V锚tements et 脡quipements Tactiques",
+      "subtitle": "Au Service des Forces Arm茅es, Police, Outdoor et Secours",
+      "description": "Fabricant certifi茅 ISO de gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et v锚tements de secours. OEM/ODM pour clients internationaux."
     },
     "featured": {
       "title": "Produits en Vedette",
-      "subtitle": "Vêtements et équipements essentiels approuvés par les professionnels militaires, policiers et de secours du monde entier"
+      "subtitle": "V锚tements et 茅quipements essentiels approuv茅s par les professionnels militaires, policiers et de secours du monde entier"
     },
     "about": {
-      "title": "Pourquoi Choisir TACPRO",
-      "subtitle": "Votre partenaire de confiance dans la fabrication de vêtements tactiques",
+      "title": "Pourquoi Choisir WearTac",
+      "subtitle": "Votre partenaire de confiance dans la fabrication de v锚tements tactiques",
       "features": {
         "factory": {
           "title": "Usine Propre",
-          "desc": "Approvisionnement direct depuis notre installation de production avec traçabilité complète"
+          "desc": "Approvisionnement direct depuis notre installation de production avec tra莽abilit茅 compl猫te"
         },
         "quality": {
-          "title": "Contrôle Qualité",
-          "desc": "Contrôle multi-étapes : inspection des tissus, vérification en cours, inspection finale AQL"
+          "title": "Contr么le Qualit茅",
+          "desc": "Contr么le multi-茅tapes : inspection des tissus, v茅rification en cours, inspection finale AQL"
         },
         "custom": {
           "title": "Expert OEM/ODM",
-          "desc": "Tissus, couleurs, tailles, étiquetage et emballage personnalisés selon vos spécifications"
+          "desc": "Tissus, couleurs, tailles, 茅tiquetage et emballage personnalis茅s selon vos sp茅cifications"
         },
         "export": {
-          "title": "Expérience d'Exportation",
-          "desc": "Conformité aux normes CE, NIJ, EN ; desservant plus de 40 pays"
+          "title": "Exp茅rience d'Exportation",
+          "desc": "Conformit茅 aux normes CE, NIJ, EN ; desservant plus de 40 pays"
         }
       }
     },
     "trust": {
       "title": "Certifications de Confiance",
-      "subtitle": "Audits d'usine et certifications produits pour les marchés mondiaux"
+      "subtitle": "Audits d'usine et certifications produits pour les march茅s mondiaux"
     },
     "cta": {
-      "title": "Prêt à Commander des Vêtements Tactiques ?",
-      "desc": "Contactez-nous pour des catalogues, des échantillons et des devis en gros",
+      "title": "Pr锚t 脿 Commander des V锚tements Tactiques ?",
+      "desc": "Contactez-nous pour des catalogues, des 茅chantillons et des devis en gros",
       "button": "Demander un Devis"
     }
   },
   "products": {
     "title": "Nos Produits",
-    "subtitle": "Vêtements et équipements tactiques professionnels pour les applications militaires, policières, outdoor et de secours",
+    "subtitle": "V锚tements et 茅quipements tactiques professionnels pour les applications militaires, polici猫res, outdoor et de secours",
     "categories": {
       "all": "Tous les Produits",
-      "military-police-gear": "Équipement Militaire et Policier",
-      "outdoor-gear": "Équipement Outdoor",
-      "rescue-gear": "Équipement de Secours"
+      "military-police-gear": "脡quipement Militaire et Policier",
+      "outdoor-gear": "脡quipement Outdoor",
+      "rescue-gear": "脡quipement de Secours"
     },
     "card": {
       "inquire": "Demander",
-      "details": "Détails",
-      "moq": "Quantité Minimale"
+      "details": "D茅tails",
+      "moq": "Quantit茅 Minimale"
     },
     "detail": {
-      "specifications": "Spécifications",
+      "specifications": "Sp茅cifications",
       "description": "Description",
       "customization": "Personnalisation Disponible",
       "related": "Produits Connexes",
@@ -86,81 +86,81 @@
     }
   },
   "cases": {
-    "title": "Études de Cas",
-    "subtitle": "Applications réelles et partenariats avec des organisations militaires, policières et de secours",
+    "title": "脡tudes de Cas",
+    "subtitle": "Applications r茅elles et partenariats avec des organisations militaires, polici猫res et de secours",
     "scenes": {
-      "military": "Opérations Militaires",
+      "military": "Op茅rations Militaires",
       "police": "Forces de l'Ordre",
       "rescue": "Missions de Secours",
-      "outdoor": "Entraînement Outdoor"
+      "outdoor": "Entra卯nement Outdoor"
     }
   },
   "blog": {
     "title": "Connaissances",
-    "subtitle": "Connaissances industrielles, technologie des matériaux et guides d'achat pour les vêtements tactiques",
+    "subtitle": "Connaissances industrielles, technologie des mat茅riaux et guides d'achat pour les v锚tements tactiques",
     "readMore": "Lire la Suite"
   },
   "about": {
-    "title": "À Propos de TACPRO",
-    "subtitle": "Votre Partenaire de Confiance dans la Fabrication de Vêtements Tactiques",
+    "title": "脌 Propos de WearTac",
+    "subtitle": "Votre Partenaire de Confiance dans la Fabrication de V锚tements Tactiques",
     "story": {
       "title": "Profil de l'Entreprise",
-      "p1": "TACPRO est un fabricant professionnel de vêtements tactiques spécialisé dans les gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et vêtements de secours pour les marchés militaire, policier et outdoor.",
-      "p2": "Avec des années d'expérience à l'exportation et une installation de production entièrement détenue, nous fournissons des services OEM/ODM avec un contrôle qualité strict de l'inspection des matières premières à la livraison du produit fini."
+      "p1": "WearTac est un fabricant professionnel de v锚tements tactiques sp茅cialis茅 dans les gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et v锚tements de secours pour les march茅s militaire, policier et outdoor.",
+      "p2": "Avec des ann茅es d'exp茅rience 脿 l'exportation et une installation de production enti猫rement d茅tenue, nous fournissons des services OEM/ODM avec un contr么le qualit茅 strict de l'inspection des mati猫res premi猫res 脿 la livraison du produit fini."
     },
     "factory": {
       "title": "Notre Usine",
-      "subtitle": "Fabrication interne avec contrôle qualité complet",
+      "subtitle": "Fabrication interne avec contr么le qualit茅 complet",
       "stats": {
         "area": "Aire de Production",
-        "workers": "Ouvriers Qualifiés",
-        "capacity": "Capacité Mensuelle",
+        "workers": "Ouvriers Qualifi茅s",
+        "capacity": "Capacit茅 Mensuelle",
         "countries": "Pays d'Exportation"
       }
     },
     "quality": {
-      "title": "Gestion de la Qualité",
-      "subtitle": "Du tissu au vêtement fini",
+      "title": "Gestion de la Qualit茅",
+      "subtitle": "Du tissu au v锚tement fini",
       "steps": {
         "fabric": "Test des Tissus",
-        "cutting": "Coupe de Précision",
+        "cutting": "Coupe de Pr茅cision",
         "sewing": "Couture et Assemblage",
         "inspection": "Inspection Finale"
       }
     },
     "certificates": {
       "title": "Certifications",
-      "subtitle": "Conformité aux normes pour les marchés mondiaux"
+      "subtitle": "Conformit茅 aux normes pour les march茅s mondiaux"
     }
   },
   "inquiry": {
     "title": "Demander un Devis",
-    "subtitle": "Remplissez le formulaire et notre équipe répondra sous 24 heures",
+    "subtitle": "Remplissez le formulaire et notre 茅quipe r茅pondra sous 24 heures",
     "form": {
       "companyName": "Nom de l'Entreprise",
-      "contactName": "Personne à Contacter",
+      "contactName": "Personne 脿 Contacter",
       "email": "Adresse Email",
-      "phone": "Téléphone / WhatsApp",
+      "phone": "T茅l茅phone / WhatsApp",
       "country": "Pays",
       "address": "Adresse",
       "message": "Vos Exigences",
-      "messagePlaceholder": "Veuillez décrire l'article, la quantité, les exigences en tissu, le prix cible, le délai de livraison, etc.",
-      "targetDate": "Date de Livraison Souhaitée",
-      "products": "Produits d'Intérêt",
+      "messagePlaceholder": "Veuillez d茅crire l'article, la quantit茅, les exigences en tissu, le prix cible, le d茅lai de livraison, etc.",
+      "targetDate": "Date de Livraison Souhait茅e",
+      "products": "Produits d'Int茅r锚t",
       "submit": "Envoyer la Demande"
     },
     "success": {
       "title": "Merci !",
-      "message": "Votre demande a été soumise avec succès. Nous vous contacterons sous 24 heures.",
-      "inquiryNo": "Votre Numéro de Référence"
+      "message": "Votre demande a 茅t茅 soumise avec succ猫s. Nous vous contacterons sous 24 heures.",
+      "inquiryNo": "Votre Num茅ro de R茅f茅rence"
     }
   },
   "contact": {
     "title": "Contactez-Nous",
-    "subtitle": "Entrez en contact pour des catalogues, des échantillons et des devis",
+    "subtitle": "Entrez en contact pour des catalogues, des 茅chantillons et des devis",
     "info": {
       "address": "Adresse",
-      "phone": "Téléphone",
+      "phone": "T茅l茅phone",
       "email": "Email",
       "whatsapp": "WhatsApp"
     },
@@ -171,10 +171,10 @@
     }
   },
   "footer": {
-    "description": "Fabricant professionnel de vêtements tactiques pour les marchés militaire, policier, outdoor et de secours. OEM/ODM bienvenue.",
+    "description": "Fabricant professionnel de v锚tements tactiques pour les march茅s militaire, policier, outdoor et de secours. OEM/ODM bienvenue.",
     "quickLinks": "Liens Rapides",
     "products": "Produits",
     "contact": "Contact",
-    "copyright": "© {year} TACPRO. Tous droits réservés."
+    "copyright": "漏 {year} WearTac. Tous droits r茅serv茅s."
   }
 }
