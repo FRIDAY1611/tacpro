@@ -1,7 +1,7 @@
 {
   "common": {
-    "siteName": "TACPRO",
-    "tagline": "Fábrica de Ropa Táctica Profesional",
+    "siteName": "WearTac",
+    "tagline": "F谩brica de Ropa T谩ctica Profesional",
     "nav": {
       "home": "Inicio",
       "products": "Productos",
@@ -9,62 +9,62 @@
       "blog": "Blog",
       "about": "Nosotros",
       "contact": "Contacto",
-      "inquiry": "Cotización"
+      "inquiry": "Cotizaci贸n"
     },
     "buttons": {
-      "learnMore": "Saber Más",
-      "inquireNow": "Solicitar Cotización",
+      "learnMore": "Saber M谩s",
+      "inquireNow": "Solicitar Cotizaci贸n",
       "submit": "Enviar",
       "viewAll": "Ver Todos los Productos",
       "viewDetails": "Ver Detalles",
-      "downloadCatalog": "Descargar Catálogo"
+      "downloadCatalog": "Descargar Cat谩logo"
     }
   },
   "home": {
     "hero": {
-      "title": "Fábrica de Ropa y Equipo Táctico",
+      "title": "F谩brica de Ropa y Equipo T谩ctico",
       "subtitle": "Servicio Militar, Policial, Outdoor y Rescate",
-      "description": "Fabricante certificado ISO de chalecos tácticos, cascos protectores, guantes tácticos, uniformes de combate y ropa de rescate. OEM/ODM para clientes globales."
+      "description": "Fabricante certificado ISO de chalecos t谩cticos, cascos protectores, guantes t谩cticos, uniformes de combate y ropa de rescate. OEM/ODM para clientes globales."
     },
     "featured": {
       "title": "Productos Destacados",
       "subtitle": "Ropa y equipo esencial confiado por profesionales militares, policiales y de rescate en todo el mundo"
     },
     "about": {
-      "title": "¿Por Qué Elegir TACPRO?",
-      "subtitle": "Su socio confiable en la fabricación de ropa táctica",
+      "title": "驴Por Qu茅 Elegir WearTac?",
+      "subtitle": "Su socio confiable en la fabricaci贸n de ropa t谩ctica",
       "features": {
         "factory": {
-          "title": "Fábrica Propia",
-          "desc": "Abastecimiento directo desde nuestra instalación de producción con trazabilidad completa"
+          "title": "F谩brica Propia",
+          "desc": "Abastecimiento directo desde nuestra instalaci贸n de producci贸n con trazabilidad completa"
         },
         "quality": {
           "title": "Control de Calidad",
-          "desc": "Control multietapa: inspección de telas, verificación en proceso, inspección final AQL"
+          "desc": "Control multietapa: inspecci贸n de telas, verificaci贸n en proceso, inspecci贸n final AQL"
         },
         "custom": {
           "title": "Experto OEM/ODM",
-          "desc": "Telas, colores, tallas, etiquetado y empaques personalizados según sus especificaciones"
+          "desc": "Telas, colores, tallas, etiquetado y empaques personalizados seg煤n sus especificaciones"
         },
         "export": {
-          "title": "Experiencia en Exportación",
-          "desc": "Cumplimiento con normas CE, NIJ, EN; atendiendo a más de 40 países"
+          "title": "Experiencia en Exportaci贸n",
+          "desc": "Cumplimiento con normas CE, NIJ, EN; atendiendo a m谩s de 40 pa铆ses"
         }
       }
     },
     "trust": {
       "title": "Certificaciones de Confianza",
-      "subtitle": "Auditorías de fábrica y certificaciones de producto para mercados globales"
+      "subtitle": "Auditor铆as de f谩brica y certificaciones de producto para mercados globales"
     },
     "cta": {
-      "title": "¿Listo para Ordenar Ropa Táctica?",
-      "desc": "Contáctenos para catálogos, muestras y cotizaciones al por mayor",
-      "button": "Solicitar Cotización"
+      "title": "驴Listo para Ordenar Ropa T谩ctica?",
+      "desc": "Cont谩ctenos para cat谩logos, muestras y cotizaciones al por mayor",
+      "button": "Solicitar Cotizaci贸n"
     }
   },
   "products": {
     "title": "Nuestros Productos",
-    "subtitle": "Ropa y equipo táctico profesional para aplicaciones militares, policiales, outdoor y de rescate",
+    "subtitle": "Ropa y equipo t谩ctico profesional para aplicaciones militares, policiales, outdoor y de rescate",
     "categories": {
       "all": "Todos los Productos",
       "military-police-gear": "Equipo Militar y Policial",
@@ -74,15 +74,15 @@
     "card": {
       "inquire": "Consultar",
       "details": "Detalles",
-      "moq": "Cantidad Mínima"
+      "moq": "Cantidad M铆nima"
     },
     "detail": {
       "specifications": "Especificaciones",
-      "description": "Descripción",
-      "customization": "Personalización Disponible",
+      "description": "Descripci贸n",
+      "customization": "Personalizaci贸n Disponible",
       "related": "Productos Relacionados",
-      "inquire": "Solicitar Cotización para Este Producto",
-      "drawing": "Dibujo Técnico"
+      "inquire": "Solicitar Cotizaci贸n para Este Producto",
+      "drawing": "Dibujo T茅cnico"
     }
   },
   "cases": {
@@ -90,91 +90,91 @@
     "subtitle": "Aplicaciones en el mundo real y alianzas con organizaciones militares, policiales y de rescate",
     "scenes": {
       "military": "Operaciones Militares",
-      "police": "Aplicación de la Ley",
+      "police": "Aplicaci贸n de la Ley",
       "rescue": "Misiones de Rescate",
       "outdoor": "Entrenamiento Outdoor"
     }
   },
   "blog": {
     "title": "Conocimientos",
-    "subtitle": "Conocimiento de la industria, tecnología de materiales y guías de adquisición para ropa táctica",
-    "readMore": "Leer Más"
+    "subtitle": "Conocimiento de la industria, tecnolog铆a de materiales y gu铆as de adquisici贸n para ropa t谩ctica",
+    "readMore": "Leer M谩s"
   },
   "about": {
-    "title": "Sobre TACPRO",
-    "subtitle": "Su Socio Confiable en Fabricación de Ropa Táctica",
+    "title": "Sobre WearTac",
+    "subtitle": "Su Socio Confiable en Fabricaci贸n de Ropa T谩ctica",
     "story": {
       "title": "Perfil de la Empresa",
-      "p1": "TACPRO es un fabricante profesional de ropa táctica especializado en chalecos tácticos, cascos protectores, guantes tácticos, uniformes de combate y ropa de rescate para los mercados militar, policial y outdoor.",
-      "p2": "Con años de experiencia en exportación y una instalación de producción propia, ofrecemos servicios OEM/ODM con estricto control de calidad desde la inspección de materias primas hasta la entrega del producto terminado."
+      "p1": "WearTac es un fabricante profesional de ropa t谩ctica especializado en chalecos t谩cticos, cascos protectores, guantes t谩cticos, uniformes de combate y ropa de rescate para los mercados militar, policial y outdoor.",
+      "p2": "Con a帽os de experiencia en exportaci贸n y una instalaci贸n de producci贸n propia, ofrecemos servicios OEM/ODM con estricto control de calidad desde la inspecci贸n de materias primas hasta la entrega del producto terminado."
     },
     "factory": {
-      "title": "Nuestra Fábrica",
-      "subtitle": "Fabricación interna con control de calidad completo",
+      "title": "Nuestra F谩brica",
+      "subtitle": "Fabricaci贸n interna con control de calidad completo",
       "stats": {
-        "area": "Área de Producción",
+        "area": "脕rea de Producci贸n",
         "workers": "Trabajadores Calificados",
         "capacity": "Capacidad Mensual",
-        "countries": "Países de Exportación"
+        "countries": "Pa铆ses de Exportaci贸n"
       }
     },
     "quality": {
-      "title": "Gestión de Calidad",
+      "title": "Gesti贸n de Calidad",
       "subtitle": "De la tela a la prenda terminada",
       "steps": {
         "fabric": "Prueba de Telas",
-        "cutting": "Corte de Precisión",
+        "cutting": "Corte de Precisi贸n",
         "sewing": "Costura y Ensamblaje",
-        "inspection": "Inspección Final"
+        "inspection": "Inspecci贸n Final"
       }
     },
     "certificates": {
       "title": "Certificaciones",
-      "subtitle": "Cumplimiento de estándares para mercados globales"
+      "subtitle": "Cumplimiento de est谩ndares para mercados globales"
     }
   },
   "inquiry": {
-    "title": "Solicitar Cotización",
-    "subtitle": "Complete el formulario y nuestro equipo responderá en 24 horas",
+    "title": "Solicitar Cotizaci贸n",
+    "subtitle": "Complete el formulario y nuestro equipo responder谩 en 24 horas",
     "form": {
       "companyName": "Nombre de la Empresa",
       "contactName": "Persona de Contacto",
-      "email": "Correo Electrónico",
-      "phone": "Teléfono / WhatsApp",
-      "country": "País",
-      "address": "Dirección",
+      "email": "Correo Electr贸nico",
+      "phone": "Tel茅fono / WhatsApp",
+      "country": "Pa铆s",
+      "address": "Direcci贸n",
       "message": "Sus Requisitos",
-      "messagePlaceholder": "Describa el artículo, cantidad, requisitos de tela, precio objetivo, tiempo de entrega, etc.",
+      "messagePlaceholder": "Describa el art铆culo, cantidad, requisitos de tela, precio objetivo, tiempo de entrega, etc.",
       "targetDate": "Fecha de Entrega Objetivo",
-      "products": "Productos de Interés",
+      "products": "Productos de Inter茅s",
       "submit": "Enviar Solicitud"
     },
     "success": {
-      "title": "¡Gracias!",
+      "title": "隆Gracias!",
       "message": "Su solicitud ha sido enviada exitosamente. Nos pondremos en contacto en 24 horas.",
-      "inquiryNo": "Su Número de Referencia"
+      "inquiryNo": "Su N煤mero de Referencia"
     }
   },
   "contact": {
-    "title": "Contáctenos",
-    "subtitle": "Póngase en contacto para catálogos, muestras y cotizaciones",
+    "title": "Cont谩ctenos",
+    "subtitle": "P贸ngase en contacto para cat谩logos, muestras y cotizaciones",
     "info": {
-      "address": "Dirección",
-      "phone": "Teléfono",
+      "address": "Direcci贸n",
+      "phone": "Tel茅fono",
       "email": "Correo",
       "whatsapp": "WhatsApp"
     },
     "hours": {
       "title": "Horario Comercial",
       "weekday": "Lunes - Viernes",
-      "weekend": "Sábado - Domingo"
+      "weekend": "S谩bado - Domingo"
     }
   },
   "footer": {
-    "description": "Fabricante profesional de ropa táctica para mercados militar, policial, outdoor y de rescate. OEM/ODM bienvenido.",
-    "quickLinks": "Enlaces Rápidos",
+    "description": "Fabricante profesional de ropa t谩ctica para mercados militar, policial, outdoor y de rescate. OEM/ODM bienvenido.",
+    "quickLinks": "Enlaces R谩pidos",
     "products": "Productos",
     "contact": "Contacto",
-    "copyright": "© {year} TACPRO. Todos los derechos reservados."
+    "copyright": "漏 {year} WearTac. Todos los derechos reservados."
   }
 }
