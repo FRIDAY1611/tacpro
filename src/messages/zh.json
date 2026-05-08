@@ -1,180 +1,180 @@
 {
   "common": {
-    "siteName": "TACPRO",
-    "tagline": "专业战术服装工厂",
+    "siteName": "WearTac",
+    "tagline": "涓撲笟鎴樻湳鏈嶈宸ュ巶",
     "nav": {
-      "home": "首页",
-      "products": "产品中心",
-      "cases": "客户案例",
-      "blog": "博客",
-      "about": "关于我们",
-      "contact": "联系我们",
-      "inquiry": "获取报价"
+      "home": "棣栭〉",
+      "products": "浜у搧涓績",
+      "cases": "瀹㈡埛妗堜緥",
+      "blog": "鍗氬",
+      "about": "鍏充簬鎴戜滑",
+      "contact": "鑱旂郴鎴戜滑",
+      "inquiry": "鑾峰彇鎶ヤ环"
     },
     "buttons": {
-      "learnMore": "了解更多",
-      "inquireNow": "获取报价",
-      "submit": "提交",
-      "viewAll": "查看全部产品",
-      "viewDetails": "查看详情",
-      "downloadCatalog": "下载产品目录"
+      "learnMore": "浜嗚В鏇村",
+      "inquireNow": "鑾峰彇鎶ヤ环",
+      "submit": "鎻愪氦",
+      "viewAll": "鏌ョ湅鍏ㄩ儴浜у搧",
+      "viewDetails": "鏌ョ湅璇︽儏",
+      "downloadCatalog": "涓嬭浇浜у搧鐩綍"
     }
   },
   "home": {
     "hero": {
-      "title": "战术服装与装备工厂",
-      "subtitle": "服务军警、户外与救援领域",
-      "description": "ISO认证制造商，专业生产战术背心、防护头盔、战术手套、作战服及救援服装。承接全球OEM/ODM订单。"
+      "title": "鎴樻湳鏈嶈涓庤澶囧伐鍘?,
+      "subtitle": "鏈嶅姟鍐涜銆佹埛澶栦笌鏁戞彺棰嗗煙",
+      "description": "ISO璁よ瘉鍒堕€犲晢锛屼笓涓氱敓浜ф垬鏈儗蹇冦€侀槻鎶ゅご鐩斻€佹垬鏈墜濂椼€佷綔鎴樻湇鍙婃晳鎻存湇瑁呫€傛壙鎺ュ叏鐞僌EM/ODM璁㈠崟銆?
     },
     "featured": {
-      "title": "主推产品",
-      "subtitle": "军警及救援人员信赖的核心服装与装备"
+      "title": "涓绘帹浜у搧",
+      "subtitle": "鍐涜鍙婃晳鎻翠汉鍛樹俊璧栫殑鏍稿績鏈嶈涓庤澶?
     },
     "about": {
-      "title": "为什么选择TACPRO",
-      "subtitle": "您可靠的战术服装制造合作伙伴",
+      "title": "涓轰粈涔堥€夋嫨WearTac",
+      "subtitle": "鎮ㄥ彲闈犵殑鎴樻湳鏈嶈鍒堕€犲悎浣滀紮浼?,
       "features": {
         "factory": {
-          "title": "自有工厂",
-          "desc": "直接对接生产基地，全流程可追溯"
+          "title": "鑷湁宸ュ巶",
+          "desc": "鐩存帴瀵规帴鐢熶骇鍩哄湴锛屽叏娴佺▼鍙拷婧?
         },
         "quality": {
-          "title": "质量管控",
-          "desc": "多阶段品控：面料检验、过程巡检、成品AQL验货"
+          "title": "璐ㄩ噺绠℃帶",
+          "desc": "澶氶樁娈靛搧鎺э細闈㈡枡妫€楠屻€佽繃绋嬪贰妫€銆佹垚鍝丄QL楠岃揣"
         },
         "custom": {
-          "title": "OEM/ODM专家",
-          "desc": "支持定制面料、颜色、尺码、吊牌及包装"
+          "title": "OEM/ODM涓撳",
+          "desc": "鏀寔瀹氬埗闈㈡枡銆侀鑹层€佸昂鐮併€佸悐鐗屽強鍖呰"
         },
         "export": {
-          "title": "出口经验",
-          "desc": "符合CE、NIJ、EN等标准；出口40余个国家"
+          "title": "鍑哄彛缁忛獙",
+          "desc": "绗﹀悎CE銆丯IJ銆丒N绛夋爣鍑嗭紱鍑哄彛40浣欎釜鍥藉"
         }
       }
     },
     "trust": {
-      "title": "权威认证",
-      "subtitle": "工厂审核与产品认证，满足全球市场准入要求"
+      "title": "鏉冨▉璁よ瘉",
+      "subtitle": "宸ュ巶瀹℃牳涓庝骇鍝佽璇侊紝婊¤冻鍏ㄧ悆甯傚満鍑嗗叆瑕佹眰"
     },
     "cta": {
-      "title": "准备采购战术服装？",
-      "desc": "联系我们获取产品目录、样衣及批量报价",
-      "button": "请求报价"
+      "title": "鍑嗗閲囪喘鎴樻湳鏈嶈锛?,
+      "desc": "鑱旂郴鎴戜滑鑾峰彇浜у搧鐩綍銆佹牱琛ｅ強鎵归噺鎶ヤ环",
+      "button": "璇锋眰鎶ヤ环"
     }
   },
   "products": {
-    "title": "产品中心",
-    "subtitle": "专业战术服装与装备，适用于军警、户外及救援场景",
+    "title": "浜у搧涓績",
+    "subtitle": "涓撲笟鎴樻湳鏈嶈涓庤澶囷紝閫傜敤浜庡啗璀︺€佹埛澶栧強鏁戞彺鍦烘櫙",
     "categories": {
-      "all": "全部产品",
-      "military-police-gear": "军警防护装备",
-      "outdoor-gear": "户外装备",
-      "rescue-gear": "救援装备"
+      "all": "鍏ㄩ儴浜у搧",
+      "military-police-gear": "鍐涜闃叉姢瑁呭",
+      "outdoor-gear": "鎴峰瑁呭",
+      "rescue-gear": "鏁戞彺瑁呭"
     },
     "card": {
-      "inquire": "询盘",
-      "details": "详情",
-      "moq": "起订量"
+      "inquire": "璇㈢洏",
+      "details": "璇︽儏",
+      "moq": "璧疯閲?
     },
     "detail": {
-      "specifications": "产品规格",
-      "description": "产品描述",
-      "customization": "支持定制",
-      "related": "相关产品",
-      "inquire": "询盘此产品",
-      "drawing": "技术图纸"
+      "specifications": "浜у搧瑙勬牸",
+      "description": "浜у搧鎻忚堪",
+      "customization": "鏀寔瀹氬埗",
+      "related": "鐩稿叧浜у搧",
+      "inquire": "璇㈢洏姝や骇鍝?,
+      "drawing": "鎶€鏈浘绾?
     }
   },
   "cases": {
-    "title": "客户案例",
-    "subtitle": "与军警、救援组织的真实应用场景及合作案例",
+    "title": "瀹㈡埛妗堜緥",
+    "subtitle": "涓庡啗璀︺€佹晳鎻寸粍缁囩殑鐪熷疄搴旂敤鍦烘櫙鍙婂悎浣滄渚?,
     "scenes": {
-      "military": "军事作战",
-      "police": "警务执法",
-      "rescue": "救援任务",
-      "outdoor": "户外训练"
+      "military": "鍐涗簨浣滄垬",
+      "police": "璀﹀姟鎵ф硶",
+      "rescue": "鏁戞彺浠诲姟",
+      "outdoor": "鎴峰璁粌"
     }
   },
   "blog": {
-    "title": "行业洞察",
-    "subtitle": "战术服装行业知识、材料技术与采购指南",
-    "readMore": "阅读更多"
+    "title": "琛屼笟娲炲療",
+    "subtitle": "鎴樻湳鏈嶈琛屼笟鐭ヨ瘑銆佹潗鏂欐妧鏈笌閲囪喘鎸囧崡",
+    "readMore": "闃呰鏇村"
   },
   "about": {
-    "title": "关于TACPRO",
-    "subtitle": "您值得信赖的战术服装制造合作伙伴",
+    "title": "鍏充簬WearTac",
+    "subtitle": "鎮ㄥ€煎緱淇¤禆鐨勬垬鏈湇瑁呭埗閫犲悎浣滀紮浼?,
     "story": {
-      "title": "公司简介",
-      "p1": "TACPRO是一家专业战术服装制造商，专注于为军警及户外市场提供战术背心、防护头盔、战术手套、作战服及救援服装。",
-      "p2": "凭借多年出口经验及自有生产基地，我们提供从原材料检验到成品交付的全流程OEM/ODM服务，严格执行品质管控。"
+      "title": "鍏徃绠€浠?,
+      "p1": "WearTac鏄竴瀹朵笓涓氭垬鏈湇瑁呭埗閫犲晢锛屼笓娉ㄤ簬涓哄啗璀﹀強鎴峰甯傚満鎻愪緵鎴樻湳鑳屽績銆侀槻鎶ゅご鐩斻€佹垬鏈墜濂椼€佷綔鎴樻湇鍙婃晳鎻存湇瑁呫€?,
+      "p2": "鍑€熷骞村嚭鍙ｇ粡楠屽強鑷湁鐢熶骇鍩哄湴锛屾垜浠彁渚涗粠鍘熸潗鏂欐楠屽埌鎴愬搧浜や粯鐨勫叏娴佺▼OEM/ODM鏈嶅姟锛屼弗鏍兼墽琛屽搧璐ㄧ鎺с€?
     },
     "factory": {
-      "title": "工厂实力",
-      "subtitle": "自主生产，全程品控",
+      "title": "宸ュ巶瀹炲姏",
+      "subtitle": "鑷富鐢熶骇锛屽叏绋嬪搧鎺?,
       "stats": {
-        "area": "生产面积",
-        "workers": "技术工人",
-        "capacity": "月产能",
-        "countries": "出口国家"
+        "area": "鐢熶骇闈㈢Н",
+        "workers": "鎶€鏈伐浜?,
+        "capacity": "鏈堜骇鑳?,
+        "countries": "鍑哄彛鍥藉"
       }
     },
     "quality": {
-      "title": "质量管理体系",
-      "subtitle": "从面料到成衣的每一道工序",
+      "title": "璐ㄩ噺绠＄悊浣撶郴",
+      "subtitle": "浠庨潰鏂欏埌鎴愯。鐨勬瘡涓€閬撳伐搴?,
       "steps": {
-        "fabric": "面料检测",
-        "cutting": "精密裁剪",
-        "sewing": "缝制组装",
-        "inspection": "成品验货"
+        "fabric": "闈㈡枡妫€娴?,
+        "cutting": "绮惧瘑瑁佸壀",
+        "sewing": "缂濆埗缁勮",
+        "inspection": "鎴愬搧楠岃揣"
       }
     },
     "certificates": {
-      "title": "资质认证",
-      "subtitle": "符合全球市场准入标准"
+      "title": "璧勮川璁よ瘉",
+      "subtitle": "绗﹀悎鍏ㄧ悆甯傚満鍑嗗叆鏍囧噯"
     }
   },
   "inquiry": {
-    "title": "请求报价",
-    "subtitle": "填写下方表单，我们将在24小时内回复",
+    "title": "璇锋眰鎶ヤ环",
+    "subtitle": "濉啓涓嬫柟琛ㄥ崟锛屾垜浠皢鍦?4灏忔椂鍐呭洖澶?,
     "form": {
-      "companyName": "公司名称",
-      "contactName": "联系人",
-      "email": "电子邮箱",
-      "phone": "电话 / WhatsApp",
-      "country": "国家/地区",
-      "address": "详细地址",
-      "message": "需求描述",
-      "messagePlaceholder": "请描述产品、数量、面料要求、目标价格、交货期等",
-      "targetDate": "期望交期",
-      "products": "意向产品",
-      "submit": "提交请求"
+      "companyName": "鍏徃鍚嶇О",
+      "contactName": "鑱旂郴浜?,
+      "email": "鐢靛瓙閭",
+      "phone": "鐢佃瘽 / WhatsApp",
+      "country": "鍥藉/鍦板尯",
+      "address": "璇︾粏鍦板潃",
+      "message": "闇€姹傛弿杩?,
+      "messagePlaceholder": "璇锋弿杩颁骇鍝併€佹暟閲忋€侀潰鏂欒姹傘€佺洰鏍囦环鏍笺€佷氦璐ф湡绛?,
+      "targetDate": "鏈熸湜浜ゆ湡",
+      "products": "鎰忓悜浜у搧",
+      "submit": "鎻愪氦璇锋眰"
     },
     "success": {
-      "title": "提交成功！",
-      "message": "您的请求已成功提交，我们将在24小时内与您联系。",
-      "inquiryNo": "您的参考编号"
+      "title": "鎻愪氦鎴愬姛锛?,
+      "message": "鎮ㄧ殑璇锋眰宸叉垚鍔熸彁浜わ紝鎴戜滑灏嗗湪24灏忔椂鍐呬笌鎮ㄨ仈绯汇€?,
+      "inquiryNo": "鎮ㄧ殑鍙傝€冪紪鍙?
     }
   },
   "contact": {
-    "title": "联系我们",
-    "subtitle": "获取产品目录、样衣及报价",
+    "title": "鑱旂郴鎴戜滑",
+    "subtitle": "鑾峰彇浜у搧鐩綍銆佹牱琛ｅ強鎶ヤ环",
     "info": {
-      "address": "地址",
-      "phone": "电话",
-      "email": "邮箱",
+      "address": "鍦板潃",
+      "phone": "鐢佃瘽",
+      "email": "閭",
       "whatsapp": "WhatsApp"
     },
     "hours": {
-      "title": "营业时间",
-      "weekday": "周一至周五",
-      "weekend": "周六至周日"
+      "title": "钀ヤ笟鏃堕棿",
+      "weekday": "鍛ㄤ竴鑷冲懆浜?,
+      "weekend": "鍛ㄥ叚鑷冲懆鏃?
     }
   },
   "footer": {
-    "description": "专业战术服装制造商，服务军警、户外及救援市场。欢迎OEM/ODM合作。",
-    "quickLinks": "快速链接",
-    "products": "产品中心",
-    "contact": "联系方式",
-    "copyright": "© {year} TACPRO 版权所有"
+    "description": "涓撲笟鎴樻湳鏈嶈鍒堕€犲晢锛屾湇鍔″啗璀︺€佹埛澶栧強鏁戞彺甯傚満銆傛杩嶰EM/ODM鍚堜綔銆?,
+    "quickLinks": "蹇€熼摼鎺?,
+    "products": "浜у搧涓績",
+    "contact": "鑱旂郴鏂瑰紡",
+    "copyright": "漏 {year} WearTac 鐗堟潈鎵€鏈?
   }
 }
