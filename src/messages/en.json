@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "TACPRO",
+    "siteName": "WearTac",
     "tagline": "Professional Tactical Apparel Factory",
     "nav": {
       "home": "Home",
@@ -31,7 +31,7 @@
       "subtitle": "Core apparel and gear trusted by military, law enforcement, and rescue professionals worldwide"
     },
     "about": {
-      "title": "Why Choose TACPRO",
+      "title": "Why Choose WearTac",
       "subtitle": "Your reliable tactical apparel manufacturing partner",
       "features": {
         "factory": {
@@ -101,11 +101,11 @@
     "readMore": "Read More"
   },
   "about": {
-    "title": "About TACPRO",
+    "title": "About WearTac",
     "subtitle": "Your Trusted Tactical Apparel Manufacturing Partner",
     "story": {
       "title": "Company Profile",
-      "p1": "TACPRO is a professional tactical apparel manufacturer specializing in tactical vests, protective helmets, tactical gloves, combat uniforms, and rescue clothing for military, police, and outdoor markets.",
+      "p1": "WearTac is a professional tactical apparel manufacturer specializing in tactical vests, protective helmets, tactical gloves, combat uniforms, and rescue clothing for military, police, and outdoor markets.",
       "p2": "With years of export experience and a fully owned production facility, we provide OEM/ODM services with strict quality control from raw material inspection to finished product delivery."
     },
     "factory": {
@@ -175,6 +175,6 @@
     "quickLinks": "Quick Links",
     "products": "Products",
     "contact": "Contact",
-    "copyright": "© {year} TACPRO. All rights reserved."
+    "copyright": "漏 {year} WearTac. All rights reserved."
   }
 }
