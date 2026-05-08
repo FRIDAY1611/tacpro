@@ -67,16 +67,16 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
   ]
 
   const productLinks = [
-    { href: '/products?category=military-police-gear', labelEn: 'Military & Police Gear', labelZh: '军警防护装备' },
-    { href: '/products?category=outdoor-gear', labelEn: 'Outdoor Gear', labelZh: '户外装备' },
-    { href: '/products?category=rescue-gear', labelEn: 'Rescue Gear', labelZh: '救援装备' },
+    { href: '/products?category=military-police-gear', labelEn: 'Military & Police Gear', labelZh: '鍐涜闃叉姢瑁呭' },
+    { href: '/products?category=outdoor-gear', labelEn: 'Outdoor Gear', labelZh: '鎴峰瑁呭' },
+    { href: '/products?category=rescue-gear', labelEn: 'Rescue Gear', labelZh: '鏁戞彺瑁呭' },
   ]
 
   const socialLinks = [
     { icon: WhatsAppIcon, href: 'https://wa.me/86XXXXXXXXXX', label: 'WhatsApp', color: 'hover:bg-green-600 hover:text-white' },
-    { icon: InstagramIcon, href: 'https://instagram.com/tacpro', label: 'Instagram', color: 'hover:bg-pink-600 hover:text-white' },
-    { icon: FacebookIcon, href: 'https://facebook.com/tacpro', label: 'Facebook', color: 'hover:bg-blue-600 hover:text-white' },
-    { icon: LinkedInIcon, href: 'https://linkedin.com/company/tacpro', label: 'LinkedIn', color: 'hover:bg-blue-700 hover:text-white' },
+    { icon: InstagramIcon, href: 'https://instagram.com/weartac', label: 'Instagram', color: 'hover:bg-pink-600 hover:text-white' },
+    { icon: FacebookIcon, href: 'https://facebook.com/weartac', label: 'Facebook', color: 'hover:bg-blue-600 hover:text-white' },
+    { icon: LinkedInIcon, href: 'https://linkedin.com/company/weartac', label: 'LinkedIn', color: 'hover:bg-blue-700 hover:text-white' },
   ]
 
   return (
@@ -86,7 +86,7 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-bold text-white">TACPRO</span>
+              <span className="text-2xl font-bold text-white">WearTac</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
               {messages.description}
@@ -131,7 +131,7 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
           <div>
             <h3 className="text-white font-semibold mb-4">{messages.contact}</h3>
             <ul className="space-y-3 text-sm text-gray-400 mb-6">
-              <li>info@tacpro.com</li>
+              <li>info@weartac.com</li>
               <li>+86 XXX XXXX XXXX</li>
               <li>WhatsApp: +86 XXX XXXX XXXX</li>
               <li>China</li>
