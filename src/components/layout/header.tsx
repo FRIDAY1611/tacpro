@@ -1,7 +1,7 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
-import { Link, usePathname } from '@/i18n/routing'
+import { Link, usePathname, useRouter } from '@/i18n/routing'
 import { Locale } from '@/i18n/config'
 import { Menu, Globe } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -35,6 +35,7 @@ interface HeaderProps {
 export function Header({ locale, messages }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -102,10 +103,8 @@ export function Header({ locale, messages }: HeaderProps) {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 {locales.map((loc) => (
-                  <DropdownMenuItem key={loc} asChild>
-                    <Link href={pathname} locale={loc}>
-                      {localeNames[loc]}
-                    </Link>
+                  <DropdownMenuItem key={loc} onClick={() => router.push(pathname, { locale: loc })}>
+                    {localeNames[loc]}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
@@ -152,3 +151,4 @@ export function Header({ locale, messages }: HeaderProps) {
     </header>
   )
 }
+
