@@ -1,7 +1,7 @@
 {
   "common": {
     "siteName": "WearTac",
-    "tagline": "F谩brica de Ropa T谩ctica Profesional",
+    "tagline": "F\u8C29brica de Ropa T\u8C29ctica Profesional",
     "nav": {
       "home": "Inicio",
       "products": "Productos",
@@ -9,62 +9,62 @@
       "blog": "Blog",
       "about": "Nosotros",
       "contact": "Contacto",
-      "inquiry": "Cotizaci贸n"
+      "inquiry": "Cotizaci\u8D38n"
     },
     "buttons": {
-      "learnMore": "Saber M谩s",
-      "inquireNow": "Solicitar Cotizaci贸n",
+      "learnMore": "Saber M\u8C29s",
+      "inquireNow": "Solicitar Cotizaci\u8D38n",
       "submit": "Enviar",
       "viewAll": "Ver Todos los Productos",
       "viewDetails": "Ver Detalles",
-      "downloadCatalog": "Descargar Cat谩logo"
+      "downloadCatalog": "Descargar Cat\u8C29logo"
     }
   },
   "home": {
     "hero": {
-      "title": "F谩brica de Ropa y Equipo T谩ctico",
+      "title": "F\u8C29brica de Ropa y Equipo T\u8C29ctico",
       "subtitle": "Servicio Militar, Policial, Outdoor y Rescate",
-      "description": "Fabricante certificado ISO de chalecos t谩cticos, cascos protectores, guantes t谩cticos, uniformes de combate y ropa de rescate. OEM/ODM para clientes globales."
+      "description": "Fabricante certificado ISO de chalecos t\u8C29cticos, cascos protectores, guantes t\u8C29cticos, uniformes de combate y ropa de rescate. OEM/ODM para clientes globales."
     },
     "featured": {
       "title": "Productos Destacados",
       "subtitle": "Ropa y equipo esencial confiado por profesionales militares, policiales y de rescate en todo el mundo"
     },
     "about": {
-      "title": "驴Por Qu茅 Elegir WearTac?",
-      "subtitle": "Su socio confiable en la fabricaci贸n de ropa t谩ctica",
+      "title": "\u9A74Por Qu\u8305 Elegir WearTac?",
+      "subtitle": "Su socio confiable en la fabricaci\u8D38n de ropa t\u8C29ctica",
       "features": {
         "factory": {
-          "title": "F谩brica Propia",
-          "desc": "Abastecimiento directo desde nuestra instalaci贸n de producci贸n con trazabilidad completa"
+          "title": "F\u8C29brica Propia",
+          "desc": "Abastecimiento directo desde nuestra instalaci\u8D38n de producci\u8D38n con trazabilidad completa"
         },
         "quality": {
           "title": "Control de Calidad",
-          "desc": "Control multietapa: inspecci贸n de telas, verificaci贸n en proceso, inspecci贸n final AQL"
+          "desc": "Control multietapa: inspecci\u8D38n de telas, verificaci\u8D38n en proceso, inspecci\u8D38n final AQL"
         },
         "custom": {
           "title": "Experto OEM/ODM",
-          "desc": "Telas, colores, tallas, etiquetado y empaques personalizados seg煤n sus especificaciones"
+          "desc": "Telas, colores, tallas, etiquetado y empaques personalizados seg\u7164n sus especificaciones"
         },
         "export": {
-          "title": "Experiencia en Exportaci贸n",
-          "desc": "Cumplimiento con normas CE, NIJ, EN; atendiendo a m谩s de 40 pa铆ses"
+          "title": "Experiencia en Exportaci\u8D38n",
+          "desc": "Cumplimiento con normas CE, NIJ, EN; atendiendo a m\u8C29s de 40 pa\u94C6ses"
         }
       }
     },
     "trust": {
       "title": "Certificaciones de Confianza",
-      "subtitle": "Auditor铆as de f谩brica y certificaciones de producto para mercados globales"
+      "subtitle": "Auditor\u94C6as de f\u8C29brica y certificaciones de producto para mercados globales"
     },
     "cta": {
-      "title": "驴Listo para Ordenar Ropa T谩ctica?",
-      "desc": "Cont谩ctenos para cat谩logos, muestras y cotizaciones al por mayor",
-      "button": "Solicitar Cotizaci贸n"
+      "title": "\u9A74Listo para Ordenar Ropa T\u8C29ctica?",
+      "desc": "Cont\u8C29ctenos para cat\u8C29logos, muestras y cotizaciones al por mayor",
+      "button": "Solicitar Cotizaci\u8D38n"
     }
   },
   "products": {
     "title": "Nuestros Productos",
-    "subtitle": "Ropa y equipo t谩ctico profesional para aplicaciones militares, policiales, outdoor y de rescate",
+    "subtitle": "Ropa y equipo t\u8C29ctico profesional para aplicaciones militares, policiales, outdoor y de rescate",
     "categories": {
       "all": "Todos los Productos",
       "military-police-gear": "Equipo Militar y Policial",
@@ -74,15 +74,15 @@
     "card": {
       "inquire": "Consultar",
       "details": "Detalles",
-      "moq": "Cantidad M铆nima"
+      "moq": "Cantidad M\u94C6nima"
     },
     "detail": {
       "specifications": "Especificaciones",
-      "description": "Descripci贸n",
-      "customization": "Personalizaci贸n Disponible",
+      "description": "Descripci\u8D38n",
+      "customization": "Personalizaci\u8D38n Disponible",
       "related": "Productos Relacionados",
-      "inquire": "Solicitar Cotizaci贸n para Este Producto",
-      "drawing": "Dibujo T茅cnico"
+      "inquire": "Solicitar Cotizaci\u8D38n para Este Producto",
+      "drawing": "Dibujo T\u8305cnico"
     }
   },
   "cases": {
@@ -90,91 +90,91 @@
     "subtitle": "Aplicaciones en el mundo real y alianzas con organizaciones militares, policiales y de rescate",
     "scenes": {
       "military": "Operaciones Militares",
-      "police": "Aplicaci贸n de la Ley",
+      "police": "Aplicaci\u8D38n de la Ley",
       "rescue": "Misiones de Rescate",
       "outdoor": "Entrenamiento Outdoor"
     }
   },
   "blog": {
     "title": "Conocimientos",
-    "subtitle": "Conocimiento de la industria, tecnolog铆a de materiales y gu铆as de adquisici贸n para ropa t谩ctica",
-    "readMore": "Leer M谩s"
+    "subtitle": "Conocimiento de la industria, tecnolog\u94C6a de materiales y gu\u94C6as de adquisici\u8D38n para ropa t\u8C29ctica",
+    "readMore": "Leer M\u8C29s"
   },
   "about": {
     "title": "Sobre WearTac",
-    "subtitle": "Su Socio Confiable en Fabricaci贸n de Ropa T谩ctica",
+    "subtitle": "Su Socio Confiable en Fabricaci\u8D38n de Ropa T\u8C29ctica",
     "story": {
       "title": "Perfil de la Empresa",
-      "p1": "WearTac es un fabricante profesional de ropa t谩ctica especializado en chalecos t谩cticos, cascos protectores, guantes t谩cticos, uniformes de combate y ropa de rescate para los mercados militar, policial y outdoor.",
-      "p2": "Con a帽os de experiencia en exportaci贸n y una instalaci贸n de producci贸n propia, ofrecemos servicios OEM/ODM con estricto control de calidad desde la inspecci贸n de materias primas hasta la entrega del producto terminado."
+      "p1": "WearTac es un fabricante profesional de ropa t\u8C29ctica especializado en chalecos t\u8C29cticos, cascos protectores, guantes t\u8C29cticos, uniformes de combate y ropa de rescate para los mercados militar, policial y outdoor.",
+      "p2": "Con a\u5E3Dos de experiencia en exportaci\u8D38n y una instalaci\u8D38n de producci\u8D38n propia, ofrecemos servicios OEM/ODM con estricto control de calidad desde la inspecci\u8D38n de materias primas hasta la entrega del producto terminado."
     },
     "factory": {
-      "title": "Nuestra F谩brica",
-      "subtitle": "Fabricaci贸n interna con control de calidad completo",
+      "title": "Nuestra F\u8C29brica",
+      "subtitle": "Fabricaci\u8D38n interna con control de calidad completo",
       "stats": {
-        "area": "脕rea de Producci贸n",
+        "area": "\u8115rea de Producci\u8D38n",
         "workers": "Trabajadores Calificados",
         "capacity": "Capacidad Mensual",
-        "countries": "Pa铆ses de Exportaci贸n"
+        "countries": "Pa\u94C6ses de Exportaci\u8D38n"
       }
     },
     "quality": {
-      "title": "Gesti贸n de Calidad",
+      "title": "Gesti\u8D38n de Calidad",
       "subtitle": "De la tela a la prenda terminada",
       "steps": {
         "fabric": "Prueba de Telas",
-        "cutting": "Corte de Precisi贸n",
+        "cutting": "Corte de Precisi\u8D38n",
         "sewing": "Costura y Ensamblaje",
-        "inspection": "Inspecci贸n Final"
+        "inspection": "Inspecci\u8D38n Final"
       }
     },
     "certificates": {
       "title": "Certificaciones",
-      "subtitle": "Cumplimiento de est谩ndares para mercados globales"
+      "subtitle": "Cumplimiento de est\u8C29ndares para mercados globales"
     }
   },
   "inquiry": {
-    "title": "Solicitar Cotizaci贸n",
-    "subtitle": "Complete el formulario y nuestro equipo responder谩 en 24 horas",
+    "title": "Solicitar Cotizaci\u8D38n",
+    "subtitle": "Complete el formulario y nuestro equipo responder\u8C29 en 24 horas",
     "form": {
       "companyName": "Nombre de la Empresa",
       "contactName": "Persona de Contacto",
-      "email": "Correo Electr贸nico",
-      "phone": "Tel茅fono / WhatsApp",
-      "country": "Pa铆s",
-      "address": "Direcci贸n",
+      "email": "Correo Electr\u8D38nico",
+      "phone": "Tel\u8305fono / WhatsApp",
+      "country": "Pa\u94C6s",
+      "address": "Direcci\u8D38n",
       "message": "Sus Requisitos",
-      "messagePlaceholder": "Describa el art铆culo, cantidad, requisitos de tela, precio objetivo, tiempo de entrega, etc.",
+      "messagePlaceholder": "Describa el art\u94C6culo, cantidad, requisitos de tela, precio objetivo, tiempo de entrega, etc.",
       "targetDate": "Fecha de Entrega Objetivo",
-      "products": "Productos de Inter茅s",
+      "products": "Productos de Inter\u8305s",
       "submit": "Enviar Solicitud"
     },
     "success": {
-      "title": "隆Gracias!",
+      "title": "\u9686Gracias!",
       "message": "Su solicitud ha sido enviada exitosamente. Nos pondremos en contacto en 24 horas.",
-      "inquiryNo": "Su N煤mero de Referencia"
+      "inquiryNo": "Su N\u7164mero de Referencia"
     }
   },
   "contact": {
-    "title": "Cont谩ctenos",
-    "subtitle": "P贸ngase en contacto para cat谩logos, muestras y cotizaciones",
+    "title": "Cont\u8C29ctenos",
+    "subtitle": "P\u8D38ngase en contacto para cat\u8C29logos, muestras y cotizaciones",
     "info": {
-      "address": "Direcci贸n",
-      "phone": "Tel茅fono",
+      "address": "Direcci\u8D38n",
+      "phone": "Tel\u8305fono",
       "email": "Correo",
       "whatsapp": "WhatsApp"
     },
     "hours": {
       "title": "Horario Comercial",
       "weekday": "Lunes - Viernes",
-      "weekend": "S谩bado - Domingo"
+      "weekend": "S\u8C29bado - Domingo"
     }
   },
   "footer": {
-    "description": "Fabricante profesional de ropa t谩ctica para mercados militar, policial, outdoor y de rescate. OEM/ODM bienvenido.",
-    "quickLinks": "Enlaces R谩pidos",
+    "description": "Fabricante profesional de ropa t\u8C29ctica para mercados militar, policial, outdoor y de rescate. OEM/ODM bienvenido.",
+    "quickLinks": "Enlaces R\u8C29pidos",
     "products": "Productos",
     "contact": "Contacto",
-    "copyright": "漏 {year} WearTac. Todos los derechos reservados."
+    "copyright": "\u6F0F {year} WearTac. Todos los derechos reservados."
   }
 }
