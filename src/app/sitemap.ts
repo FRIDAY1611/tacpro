@@ -2,9 +2,8 @@ import { MetadataRoute } from 'next'
 import { prisma } from '@/lib/prisma'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://weartac.com'
 
-  // Static routes
   const staticRoutes = [
     '',
     '/products',
@@ -15,7 +14,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const routes: MetadataRoute.Sitemap = []
 
-  // Add routes for both languages
   for (const locale of ['en', 'zh']) {
     for (const route of staticRoutes) {
       routes.push({
@@ -27,11 +25,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  // Dynamic product routes
-  const products = await prisma.product.findMany({
-    where: { isActive: true },
-    select: { slug: true, updatedAt: true },
-  })
+  let products: Array<{ slug: string; updatedAt: Date }> = []
+  try {
+    products = await prisma.product.findMany({
+      where: { isActive: true },
+      select: { slug: true, updatedAt: true },
+    })
+  } catch {
+    // DB not available during build or runtime
+  }
 
   for (const product of products) {
     for (const locale of ['en', 'zh']) {
