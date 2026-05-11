@@ -1,180 +1,181 @@
-{
+﻿{
   "common": {
     "siteName": "WearTac",
-    "tagline": "专业战术服装工厂",
+    "tagline": "\u4E13\u4E1A\u6218\u672F\u670D\u88C5\u5DE5\u5382",
     "nav": {
-      "home": "首页",
-      "products": "产品中心",
-      "cases": "客户案例",
-      "blog": "博客",
-      "about": "关于我们",
-      "contact": "联系我们",
-      "inquiry": "获取报价"
+      "home": "\u9996\u9875",
+      "products": "\u4EA7\u54C1\u4E2D\u5FC3",
+      "cases": "\u5BA2\u6237\u6848\u4F8B",
+      "blog": "\u535A\u5BA2",
+      "about": "\u5173\u4E8E\u6211\u4EEC",
+      "contact": "\u8054\u7CFB\u6211\u4EEC",
+      "inquiry": "\u83B7\u53D6\u62A5\u4EF7"
     },
     "buttons": {
-      "learnMore": "了解更多",
-      "inquireNow": "获取报价",
-      "submit": "提交",
-      "viewAll": "查看全部产品",
-      "viewDetails": "查看详情",
-      "downloadCatalog": "下载产品目录"
+      "learnMore": "\u4E86\u89E3\u66F4\u591A",
+      "inquireNow": "\u83B7\u53D6\u62A5\u4EF7",
+      "submit": "\u63D0\u4EA4",
+      "viewAll": "\u67E5\u770B\u5168\u90E8\u4EA7\u54C1",
+      "viewDetails": "\u67E5\u770B\u8BE6\u60C5",
+      "downloadCatalog": "\u4E0B\u8F7D\u4EA7\u54C1\u76EE\u5F55"
     }
   },
   "home": {
     "hero": {
-      "title": "战术服装与装备工厂",
-      "subtitle": "服务军警、户外与救援领域",
-      "description": "ISO认证制造商，专业生产战术背心、防护头盔、战术手套、作战服及救援服装。承接全球OEM/ODM订单。"
+      "title": "\u6218\u672F\u670D\u88C5\u4E0E\u88C5\u5907\u5DE5\u5382",
+      "subtitle": "\u670D\u52A1\u519B\u8B66\u3001\u6237\u5916\u4E0E\u6551\u63F4\u9886\u57DF",
+      "description": "ISO\u8BA4\u8BC1\u5236\u9020\u5546\uFF0C\u4E13\u4E1A\u751F\u4EA7\u6218\u672F\u80CC\u5FC3\u3001\u9632\u62A4\u5934\u76D4\u3001\u6218\u672F\u624B\u5957\u3001\u4F5C\u6218\u670D\u53CA\u6551\u63F4\u670D\u88C5\u3002\u627F\u63A5\u5168\u7403OEM/ODM\u8BA2\u5355\u3002"
     },
     "featured": {
-      "title": "主推产品",
-      "subtitle": "军警及救援人员信赖的核心服装与装备"
+      "title": "\u4E3B\u63A8\u4EA7\u54C1",
+      "subtitle": "\u519B\u8B66\u53CA\u6551\u63F4\u4EBA\u5458\u4FE1\u8D56\u7684\u6838\u5FC3\u670D\u88C5\u4E0E\u88C5\u5907"
     },
     "about": {
-      "title": "为什么选择WearTac",
-      "subtitle": "您可靠的战术服装制造合作伙伴",
+      "title": "\u4E3A\u4EC0\u4E48\u9009\u62E9WearTac",
+      "subtitle": "\u60A8\u53EF\u9760\u7684\u6218\u672F\u670D\u88C5\u5236\u9020\u5408\u4F5C\u4F19\u4F34",
       "features": {
         "factory": {
-          "title": "自有工厂",
-          "desc": "直接对接生产基地，全流程可追溯"
+          "title": "\u81EA\u6709\u5DE5\u5382",
+          "desc": "\u76F4\u63A5\u5BF9\u63A5\u751F\u4EA7\u57FA\u5730\uFF0C\u5168\u6D41\u7A0B\u53EF\u8FFD\u6EAF"
         },
         "quality": {
-          "title": "质量管控",
-          "desc": "多阶段品控：面料检验、过程巡检、成品AQL验货"
+          "title": "\u8D28\u91CF\u7BA1\u63A7",
+          "desc": "\u591A\u9636\u6BB5\u54C1\u63A7\uFF1A\u9762\u6599\u68C0\u9A8C\u3001\u8FC7\u7A0B\u5DE1\u68C0\u3001\u6210\u54C1AQL\u9A8C\u8D27"
         },
         "custom": {
-          "title": "OEM/ODM专家",
-          "desc": "支持定制面料、颜色、尺码、吊牌及包装"
+          "title": "OEM/ODM\u4E13\u5BB6",
+          "desc": "\u652F\u6301\u5B9A\u5236\u9762\u6599\u3001\u989C\u8272\u3001\u5C3A\u7801\u3001\u540A\u724C\u53CA\u5305\u88C5"
         },
         "export": {
-          "title": "出口经验",
-          "desc": "符合CE、NIJ、EN等标准；出口40余个国家"
+          "title": "\u51FA\u53E3\u7ECF\u9A8C",
+          "desc": "\u7B26\u5408CE\u3001NIJ\u3001EN\u7B49\u6807\u51C6\uFF1B\u51FA\u53E340\u4F59\u4E2A\u56FD\u5BB6"
         }
       }
     },
     "trust": {
-      "title": "权威认证",
-      "subtitle": "工厂审核与产品认证，满足全球市场准入要求"
+      "title": "\u6743\u5A01\u8BA4\u8BC1",
+      "subtitle": "\u5DE5\u5382\u5BA1\u6838\u4E0E\u4EA7\u54C1\u8BA4\u8BC1\uFF0C\u6EE1\u8DB3\u5168\u7403\u5E02\u573A\u51C6\u5165\u8981\u6C42"
     },
     "cta": {
-      "title": "准备采购战术服装？",
-      "desc": "联系我们获取产品目录、样衣及批量报价",
-      "button": "请求报价"
+      "title": "\u51C6\u5907\u91C7\u8D2D\u6218\u672F\u670D\u88C5\uFF1F",
+      "desc": "\u8054\u7CFB\u6211\u4EEC\u83B7\u53D6\u4EA7\u54C1\u76EE\u5F55\u3001\u6837\u8863\u53CA\u6279\u91CF\u62A5\u4EF7",
+      "button": "\u8BF7\u6C42\u62A5\u4EF7"
     }
   },
   "products": {
-    "title": "产品中心",
-    "subtitle": "专业战术服装与装备，适用于军警、户外及救援场景",
+    "title": "\u4EA7\u54C1\u4E2D\u5FC3",
+    "subtitle": "\u4E13\u4E1A\u6218\u672F\u670D\u88C5\u4E0E\u88C5\u5907\uFF0C\u9002\u7528\u4E8E\u519B\u8B66\u3001\u6237\u5916\u53CA\u6551\u63F4\u573A\u666F",
     "categories": {
-      "all": "全部产品",
-      "military-police-gear": "军警防护装备",
-      "outdoor-gear": "户外装备",
-      "rescue-gear": "救援装备"
+      "all": "\u5168\u90E8\u4EA7\u54C1",
+      "military-police-gear": "\u519B\u8B66\u9632\u62A4\u88C5\u5907",
+      "outdoor-gear": "\u6237\u5916\u88C5\u5907",
+      "rescue-gear": "\u6551\u63F4\u88C5\u5907"
     },
     "card": {
-      "inquire": "询盘",
-      "details": "详情",
-      "moq": "起订量"
+      "inquire": "\u8BE2\u76D8",
+      "details": "\u8BE6\u60C5",
+      "moq": "\u8D77\u8BA2\u91CF"
     },
     "detail": {
-      "specifications": "产品规格",
-      "description": "产品描述",
-      "customization": "支持定制",
-      "related": "相关产品",
-      "inquire": "询盘此产品",
-      "drawing": "技术图纸"
+      "specifications": "\u4EA7\u54C1\u89C4\u683C",
+      "description": "\u4EA7\u54C1\u63CF\u8FF0",
+      "customization": "\u652F\u6301\u5B9A\u5236",
+      "related": "\u76F8\u5173\u4EA7\u54C1",
+      "inquire": "\u8BE2\u76D8\u6B64\u4EA7\u54C1",
+      "drawing": "\u6280\u672F\u56FE\u7EB8"
     }
   },
   "cases": {
-    "title": "客户案例",
-    "subtitle": "与军警、救援组织的真实应用场景及合作案例",
+    "title": "\u5BA2\u6237\u6848\u4F8B",
+    "subtitle": "\u4E0E\u519B\u8B66\u3001\u6551\u63F4\u7EC4\u7EC7\u7684\u771F\u5B9E\u5E94\u7528\u573A\u666F\u53CA\u5408\u4F5C\u6848\u4F8B",
     "scenes": {
-      "military": "军事作战",
-      "police": "警务执法",
-      "rescue": "救援任务",
-      "outdoor": "户外训练"
+      "military": "\u519B\u4E8B\u4F5C\u6218",
+      "police": "\u8B66\u52A1\u6267\u6CD5",
+      "rescue": "\u6551\u63F4\u4EFB\u52A1",
+      "outdoor": "\u6237\u5916\u8BAD\u7EC3"
     }
   },
   "blog": {
-    "title": "行业洞察",
-    "subtitle": "战术服装行业知识、材料技术与采购指南",
-    "readMore": "阅读更多"
+    "title": "\u884C\u4E1A\u6D1E\u5BDF",
+    "subtitle": "\u6218\u672F\u670D\u88C5\u884C\u4E1A\u77E5\u8BC6\u3001\u6750\u6599\u6280\u672F\u4E0E\u91C7\u8D2D\u6307\u5357",
+    "readMore": "\u9605\u8BFB\u66F4\u591A"
   },
   "about": {
-    "title": "关于WearTac",
-    "subtitle": "您值得信赖的战术服装制造合作伙伴",
+    "title": "\u5173\u4E8EWearTac",
+    "subtitle": "\u60A8\u503C\u5F97\u4FE1\u8D56\u7684\u6218\u672F\u670D\u88C5\u5236\u9020\u5408\u4F5C\u4F19\u4F34",
     "story": {
-      "title": "公司简介",
-      "p1": "WearTac是一家专业战术服装制造商，专注于为军警及户外市场提供战术背心、防护头盔、战术手套、作战服及救援服装。",
-      "p2": "凭借多年出口经验及自有生产基地，我们提供从原材料检验到成品交付的全流程OEM/ODM服务，严格执行品质管控。"
+      "title": "\u516C\u53F8\u7B80\u4ECB",
+      "p1": "WearTac\u662F\u4E00\u5BB6\u4E13\u4E1A\u6218\u672F\u670D\u88C5\u5236\u9020\u5546\uFF0C\u4E13\u6CE8\u4E8E\u4E3A\u519B\u8B66\u53CA\u6237\u5916\u5E02\u573A\u63D0\u4F9B\u6218\u672F\u80CC\u5FC3\u3001\u9632\u62A4\u5934\u76D4\u3001\u6218\u672F\u624B\u5957\u3001\u4F5C\u6218\u670D\u53CA\u6551\u63F4\u670D\u88C5\u3002",
+      "p2": "\u51ED\u501F\u591A\u5E74\u51FA\u53E3\u7ECF\u9A8C\u53CA\u81EA\u6709\u751F\u4EA7\u57FA\u5730\uFF0C\u6211\u4EEC\u63D0\u4F9B\u4ECE\u539F\u6750\u6599\u68C0\u9A8C\u5230\u6210\u54C1\u4EA4\u4ED8\u7684\u5168\u6D41\u7A0BOEM/ODM\u670D\u52A1\uFF0C\u4E25\u683C\u6267\u884C\u54C1\u8D28\u7BA1\u63A7\u3002"
     },
     "factory": {
-      "title": "工厂实力",
-      "subtitle": "自主生产，全程品控",
+      "title": "\u5DE5\u5382\u5B9E\u529B",
+      "subtitle": "\u81EA\u4E3B\u751F\u4EA7\uFF0C\u5168\u7A0B\u54C1\u63A7",
       "stats": {
-        "area": "生产面积",
-        "workers": "技术工人",
-        "capacity": "月产能",
-        "countries": "出口国家"
+        "area": "\u751F\u4EA7\u9762\u79EF",
+        "workers": "\u6280\u672F\u5DE5\u4EBA",
+        "capacity": "\u6708\u4EA7\u80FD",
+        "countries": "\u51FA\u53E3\u56FD\u5BB6"
       }
     },
     "quality": {
-      "title": "质量管理体系",
-      "subtitle": "从面料到成衣的每一道工序",
+      "title": "\u8D28\u91CF\u7BA1\u7406\u4F53\u7CFB",
+      "subtitle": "\u4ECE\u9762\u6599\u5230\u6210\u8863\u7684\u6BCF\u4E00\u9053\u5DE5\u5E8F",
       "steps": {
-        "fabric": "面料检测",
-        "cutting": "精密裁剪",
-        "sewing": "缝制组装",
-        "inspection": "成品验货"
+        "fabric": "\u9762\u6599\u68C0\u6D4B",
+        "cutting": "\u7CBE\u5BC6\u88C1\u526A",
+        "sewing": "\u7F1D\u5236\u7EC4\u88C5",
+        "inspection": "\u6210\u54C1\u9A8C\u8D27"
       }
     },
     "certificates": {
-      "title": "资质认证",
-      "subtitle": "符合全球市场准入标准"
+      "title": "\u8D44\u8D28\u8BA4\u8BC1",
+      "subtitle": "\u7B26\u5408\u5168\u7403\u5E02\u573A\u51C6\u5165\u6807\u51C6"
     }
   },
   "inquiry": {
-    "title": "请求报价",
-    "subtitle": "填写下方表单，我们将在24小时内回复",
+    "title": "\u8BF7\u6C42\u62A5\u4EF7",
+    "subtitle": "\u586B\u5199\u4E0B\u65B9\u8868\u5355\uFF0C\u6211\u4EEC\u5C06\u572824\u5C0F\u65F6\u5185\u56DE\u590D",
     "form": {
-      "companyName": "公司名称",
-      "contactName": "联系人",
-      "email": "电子邮箱",
-      "phone": "电话 / WhatsApp",
-      "country": "国家/地区",
-      "address": "详细地址",
-      "message": "需求描述",
-      "messagePlaceholder": "请描述产品、数量、面料要求、目标价格、交货期等",
-      "targetDate": "期望交期",
-      "products": "意向产品",
-      "submit": "提交请求"
+      "companyName": "\u516C\u53F8\u540D\u79F0",
+      "contactName": "\u8054\u7CFB\u4EBA",
+      "email": "\u7535\u5B50\u90AE\u7BB1",
+      "phone": "\u7535\u8BDD / WhatsApp",
+      "country": "\u56FD\u5BB6/\u5730\u533A",
+      "address": "\u8BE6\u7EC6\u5730\u5740",
+      "message": "\u9700\u6C42\u63CF\u8FF0",
+      "messagePlaceholder": "\u8BF7\u63CF\u8FF0\u4EA7\u54C1\u3001\u6570\u91CF\u3001\u9762\u6599\u8981\u6C42\u3001\u76EE\u6807\u4EF7\u683C\u3001\u4EA4\u8D27\u671F\u7B49",
+      "targetDate": "\u671F\u671B\u4EA4\u671F",
+      "products": "\u610F\u5411\u4EA7\u54C1",
+      "submit": "\u63D0\u4EA4\u8BF7\u6C42"
     },
     "success": {
-      "title": "提交成功！",
-      "message": "您的请求已成功提交，我们将在24小时内与您联系。",
-      "inquiryNo": "您的参考编号"
+      "title": "\u63D0\u4EA4\u6210\u529F\uFF01",
+      "message": "\u60A8\u7684\u8BF7\u6C42\u5DF2\u6210\u529F\u63D0\u4EA4\uFF0C\u6211\u4EEC\u5C06\u572824\u5C0F\u65F6\u5185\u4E0E\u60A8\u8054\u7CFB\u3002",
+      "inquiryNo": "\u60A8\u7684\u53C2\u8003\u7F16\u53F7"
     }
   },
   "contact": {
-    "title": "联系我们",
-    "subtitle": "获取产品目录、样衣及报价",
+    "title": "\u8054\u7CFB\u6211\u4EEC",
+    "subtitle": "\u83B7\u53D6\u4EA7\u54C1\u76EE\u5F55\u3001\u6837\u8863\u53CA\u62A5\u4EF7",
     "info": {
-      "address": "地址",
-      "phone": "电话",
-      "email": "邮箱",
+      "address": "\u5730\u5740",
+      "phone": "\u7535\u8BDD",
+      "email": "\u90AE\u7BB1",
       "whatsapp": "WhatsApp"
     },
     "hours": {
-      "title": "营业时间",
-      "weekday": "周一至周五",
-      "weekend": "周六至周日"
+      "title": "\u8425\u4E1A\u65F6\u95F4",
+      "weekday": "\u5468\u4E00\u81F3\u5468\u4E94",
+      "weekend": "\u5468\u516D\u81F3\u5468\u65E5"
     }
   },
   "footer": {
-    "description": "专业战术服装制造商，服务军警、户外及救援市场。欢迎OEM/ODM合作。",
-    "quickLinks": "快速链接",
-    "products": "产品中心",
-    "contact": "联系方式",
-    "copyright": "© {year} WearTac 版权所有"
+    "description": "\u4E13\u4E1A\u6218\u672F\u670D\u88C5\u5236\u9020\u5546\uFF0C\u670D\u52A1\u519B\u8B66\u3001\u6237\u5916\u53CA\u6551\u63F4\u5E02\u573A\u3002\u6B22\u8FCEOEM/ODM\u5408\u4F5C\u3002",
+    "quickLinks": "\u5FEB\u901F\u94FE\u63A5",
+    "products": "\u4EA7\u54C1\u4E2D\u5FC3",
+    "contact": "\u8054\u7CFB\u65B9\u5F0F",
+    "copyright": "\u00A9 {year} WearTac \u7248\u6743\u6240\u6709"
   }
 }
+
