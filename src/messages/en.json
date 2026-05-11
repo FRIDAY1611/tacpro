@@ -175,6 +175,6 @@
     "quickLinks": "Quick Links",
     "products": "Products",
     "contact": "Contact",
-    "copyright": "\u6F0F {year} WearTac. All rights reserved."
+    "copyright": "\u00A9 {year} WearTac. All rights reserved."
   }
 }
