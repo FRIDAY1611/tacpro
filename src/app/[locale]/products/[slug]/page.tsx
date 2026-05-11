@@ -10,11 +10,7 @@ import { Separator } from '@/components/ui/separator'
 import { Shield, Ruler } from 'lucide-react'
 
 export async function generateStaticParams() {
-  const products = await prisma.product.findMany({
-    where: { isActive: true },
-    select: { slug: true },
-  })
-  return products.map((p) => ({ slug: p.slug }))
+  return []
 }
 
 export async function generateMetadata({
@@ -23,9 +19,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>
 }) {
   const { locale, slug } = await params
-  const product = await prisma.product.findUnique({
-    where: { slug },
-  })
+  let product = null
+  try {
+    product = await prisma.product.findUnique({
+      where: { slug },
+    })
+  } catch {
+    return {}
+  }
 
   if (!product) return {}
 
