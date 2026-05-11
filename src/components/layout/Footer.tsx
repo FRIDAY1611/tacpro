@@ -67,9 +67,9 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
   ]
 
   const productLinks = [
-    { href: '/products?category=military-police-gear', labelEn: 'Military & Police Gear', labelZh: '\u9350\u6D9C\uE11F\u95C3\u53C9\u59E2\u7441\u546D\uE62C' },
-    { href: '/products?category=outdoor-gear', labelEn: 'Outdoor Gear', labelZh: '\u93B4\u5CF0\uE63B\u7441\u546D\uE62C' },
-    { href: '/products?category=rescue-gear', labelEn: 'Rescue Gear', labelZh: '\u93C1\u621E\u5F7A\u7441\u546D\uE62C' },
+    { href: '/products?category=military-police-gear', labelEn: 'Military & Police Gear', labelZh: '军警防护装备' },
+    { href: '/products?category=outdoor-gear', labelEn: 'Outdoor Gear', labelZh: '户外装备' },
+    { href: '/products?category=rescue-gear', labelEn: 'Rescue Gear', labelZh: '救援装备' },
   ]
 
   const socialLinks = [
