@@ -1,9 +1,8 @@
 import { NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
 
 export async function POST() {
   const cookieStore = await cookies()
   cookieStore.delete('admin_session')
-  redirect('/admin/login')
+  return NextResponse.redirect(new URL('/admin/login', 'https://weartac.com'))
 }
