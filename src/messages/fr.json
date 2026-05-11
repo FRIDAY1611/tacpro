@@ -1,13 +1,13 @@
 {
   "common": {
     "siteName": "WearTac",
-    "tagline": "Usine Professionnelle de V锚tements Tactiques",
+    "tagline": "Usine Professionnelle de V\u951Atements Tactiques",
     "nav": {
       "home": "Accueil",
       "products": "Produits",
-      "cases": "脡tudes de Cas",
+      "cases": "\u8121tudes de Cas",
       "blog": "Blog",
-      "about": "脌 Propos",
+      "about": "\u810C Propos",
       "contact": "Contact",
       "inquiry": "Devis"
     },
@@ -16,68 +16,68 @@
       "inquireNow": "Demander un Devis",
       "submit": "Soumettre",
       "viewAll": "Voir Tous les Produits",
-      "viewDetails": "Voir les D茅tails",
-      "downloadCatalog": "T茅l茅charger le Catalogue"
+      "viewDetails": "Voir les D\u8305tails",
+      "downloadCatalog": "T\u8305l\u8305charger le Catalogue"
     }
   },
   "home": {
     "hero": {
-      "title": "Usine de V锚tements et 脡quipements Tactiques",
-      "subtitle": "Au Service des Forces Arm茅es, Police, Outdoor et Secours",
-      "description": "Fabricant certifi茅 ISO de gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et v锚tements de secours. OEM/ODM pour clients internationaux."
+      "title": "Usine de V\u951Atements et \u8121quipements Tactiques",
+      "subtitle": "Au Service des Forces Arm\u8305es, Police, Outdoor et Secours",
+      "description": "Fabricant certifi\u8305 ISO de gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et v\u951Atements de secours. OEM/ODM pour clients internationaux."
     },
     "featured": {
       "title": "Produits en Vedette",
-      "subtitle": "V锚tements et 茅quipements essentiels approuv茅s par les professionnels militaires, policiers et de secours du monde entier"
+      "subtitle": "V\u951Atements et \u8305quipements essentiels approuv\u8305s par les professionnels militaires, policiers et de secours du monde entier"
     },
     "about": {
       "title": "Pourquoi Choisir WearTac",
-      "subtitle": "Votre partenaire de confiance dans la fabrication de v锚tements tactiques",
+      "subtitle": "Votre partenaire de confiance dans la fabrication de v\u951Atements tactiques",
       "features": {
         "factory": {
           "title": "Usine Propre",
-          "desc": "Approvisionnement direct depuis notre installation de production avec tra莽abilit茅 compl猫te"
+          "desc": "Approvisionnement direct depuis notre installation de production avec tra\u83BDabilit\u8305 compl\u732Bte"
         },
         "quality": {
-          "title": "Contr么le Qualit茅",
-          "desc": "Contr么le multi-茅tapes : inspection des tissus, v茅rification en cours, inspection finale AQL"
+          "title": "Contr\u4E48le Qualit\u8305",
+          "desc": "Contr\u4E48le multi-\u8305tapes : inspection des tissus, v\u8305rification en cours, inspection finale AQL"
         },
         "custom": {
           "title": "Expert OEM/ODM",
-          "desc": "Tissus, couleurs, tailles, 茅tiquetage et emballage personnalis茅s selon vos sp茅cifications"
+          "desc": "Tissus, couleurs, tailles, \u8305tiquetage et emballage personnalis\u8305s selon vos sp\u8305cifications"
         },
         "export": {
-          "title": "Exp茅rience d'Exportation",
-          "desc": "Conformit茅 aux normes CE, NIJ, EN ; desservant plus de 40 pays"
+          "title": "Exp\u8305rience d'Exportation",
+          "desc": "Conformit\u8305 aux normes CE, NIJ, EN ; desservant plus de 40 pays"
         }
       }
     },
     "trust": {
       "title": "Certifications de Confiance",
-      "subtitle": "Audits d'usine et certifications produits pour les march茅s mondiaux"
+      "subtitle": "Audits d'usine et certifications produits pour les march\u8305s mondiaux"
     },
     "cta": {
-      "title": "Pr锚t 脿 Commander des V锚tements Tactiques ?",
-      "desc": "Contactez-nous pour des catalogues, des 茅chantillons et des devis en gros",
+      "title": "Pr\u951At \u813F Commander des V\u951Atements Tactiques ?",
+      "desc": "Contactez-nous pour des catalogues, des \u8305chantillons et des devis en gros",
       "button": "Demander un Devis"
     }
   },
   "products": {
     "title": "Nos Produits",
-    "subtitle": "V锚tements et 茅quipements tactiques professionnels pour les applications militaires, polici猫res, outdoor et de secours",
+    "subtitle": "V\u951Atements et \u8305quipements tactiques professionnels pour les applications militaires, polici\u732Bres, outdoor et de secours",
     "categories": {
       "all": "Tous les Produits",
-      "military-police-gear": "脡quipement Militaire et Policier",
-      "outdoor-gear": "脡quipement Outdoor",
-      "rescue-gear": "脡quipement de Secours"
+      "military-police-gear": "\u8121quipement Militaire et Policier",
+      "outdoor-gear": "\u8121quipement Outdoor",
+      "rescue-gear": "\u8121quipement de Secours"
     },
     "card": {
       "inquire": "Demander",
-      "details": "D茅tails",
-      "moq": "Quantit茅 Minimale"
+      "details": "D\u8305tails",
+      "moq": "Quantit\u8305 Minimale"
     },
     "detail": {
-      "specifications": "Sp茅cifications",
+      "specifications": "Sp\u8305cifications",
       "description": "Description",
       "customization": "Personnalisation Disponible",
       "related": "Produits Connexes",
@@ -86,81 +86,81 @@
     }
   },
   "cases": {
-    "title": "脡tudes de Cas",
-    "subtitle": "Applications r茅elles et partenariats avec des organisations militaires, polici猫res et de secours",
+    "title": "\u8121tudes de Cas",
+    "subtitle": "Applications r\u8305elles et partenariats avec des organisations militaires, polici\u732Bres et de secours",
     "scenes": {
-      "military": "Op茅rations Militaires",
+      "military": "Op\u8305rations Militaires",
       "police": "Forces de l'Ordre",
       "rescue": "Missions de Secours",
-      "outdoor": "Entra卯nement Outdoor"
+      "outdoor": "Entra\u536Fnement Outdoor"
     }
   },
   "blog": {
     "title": "Connaissances",
-    "subtitle": "Connaissances industrielles, technologie des mat茅riaux et guides d'achat pour les v锚tements tactiques",
+    "subtitle": "Connaissances industrielles, technologie des mat\u8305riaux et guides d'achat pour les v\u951Atements tactiques",
     "readMore": "Lire la Suite"
   },
   "about": {
-    "title": "脌 Propos de WearTac",
-    "subtitle": "Votre Partenaire de Confiance dans la Fabrication de V锚tements Tactiques",
+    "title": "\u810C Propos de WearTac",
+    "subtitle": "Votre Partenaire de Confiance dans la Fabrication de V\u951Atements Tactiques",
     "story": {
       "title": "Profil de l'Entreprise",
-      "p1": "WearTac est un fabricant professionnel de v锚tements tactiques sp茅cialis茅 dans les gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et v锚tements de secours pour les march茅s militaire, policier et outdoor.",
-      "p2": "Avec des ann茅es d'exp茅rience 脿 l'exportation et une installation de production enti猫rement d茅tenue, nous fournissons des services OEM/ODM avec un contr么le qualit茅 strict de l'inspection des mati猫res premi猫res 脿 la livraison du produit fini."
+      "p1": "WearTac est un fabricant professionnel de v\u951Atements tactiques sp\u8305cialis\u8305 dans les gilets tactiques, casques protecteurs, gants tactiques, uniformes de combat et v\u951Atements de secours pour les march\u8305s militaire, policier et outdoor.",
+      "p2": "Avec des ann\u8305es d'exp\u8305rience \u813F l'exportation et une installation de production enti\u732Brement d\u8305tenue, nous fournissons des services OEM/ODM avec un contr\u4E48le qualit\u8305 strict de l'inspection des mati\u732Bres premi\u732Bres \u813F la livraison du produit fini."
     },
     "factory": {
       "title": "Notre Usine",
-      "subtitle": "Fabrication interne avec contr么le qualit茅 complet",
+      "subtitle": "Fabrication interne avec contr\u4E48le qualit\u8305 complet",
       "stats": {
         "area": "Aire de Production",
-        "workers": "Ouvriers Qualifi茅s",
-        "capacity": "Capacit茅 Mensuelle",
+        "workers": "Ouvriers Qualifi\u8305s",
+        "capacity": "Capacit\u8305 Mensuelle",
         "countries": "Pays d'Exportation"
       }
     },
     "quality": {
-      "title": "Gestion de la Qualit茅",
-      "subtitle": "Du tissu au v锚tement fini",
+      "title": "Gestion de la Qualit\u8305",
+      "subtitle": "Du tissu au v\u951Atement fini",
       "steps": {
         "fabric": "Test des Tissus",
-        "cutting": "Coupe de Pr茅cision",
+        "cutting": "Coupe de Pr\u8305cision",
         "sewing": "Couture et Assemblage",
         "inspection": "Inspection Finale"
       }
     },
     "certificates": {
       "title": "Certifications",
-      "subtitle": "Conformit茅 aux normes pour les march茅s mondiaux"
+      "subtitle": "Conformit\u8305 aux normes pour les march\u8305s mondiaux"
     }
   },
   "inquiry": {
     "title": "Demander un Devis",
-    "subtitle": "Remplissez le formulaire et notre 茅quipe r茅pondra sous 24 heures",
+    "subtitle": "Remplissez le formulaire et notre \u8305quipe r\u8305pondra sous 24 heures",
     "form": {
       "companyName": "Nom de l'Entreprise",
-      "contactName": "Personne 脿 Contacter",
+      "contactName": "Personne \u813F Contacter",
       "email": "Adresse Email",
-      "phone": "T茅l茅phone / WhatsApp",
+      "phone": "T\u8305l\u8305phone / WhatsApp",
       "country": "Pays",
       "address": "Adresse",
       "message": "Vos Exigences",
-      "messagePlaceholder": "Veuillez d茅crire l'article, la quantit茅, les exigences en tissu, le prix cible, le d茅lai de livraison, etc.",
-      "targetDate": "Date de Livraison Souhait茅e",
-      "products": "Produits d'Int茅r锚t",
+      "messagePlaceholder": "Veuillez d\u8305crire l'article, la quantit\u8305, les exigences en tissu, le prix cible, le d\u8305lai de livraison, etc.",
+      "targetDate": "Date de Livraison Souhait\u8305e",
+      "products": "Produits d'Int\u8305r\u951At",
       "submit": "Envoyer la Demande"
     },
     "success": {
       "title": "Merci !",
-      "message": "Votre demande a 茅t茅 soumise avec succ猫s. Nous vous contacterons sous 24 heures.",
-      "inquiryNo": "Votre Num茅ro de R茅f茅rence"
+      "message": "Votre demande a \u8305t\u8305 soumise avec succ\u732Bs. Nous vous contacterons sous 24 heures.",
+      "inquiryNo": "Votre Num\u8305ro de R\u8305f\u8305rence"
     }
   },
   "contact": {
     "title": "Contactez-Nous",
-    "subtitle": "Entrez en contact pour des catalogues, des 茅chantillons et des devis",
+    "subtitle": "Entrez en contact pour des catalogues, des \u8305chantillons et des devis",
     "info": {
       "address": "Adresse",
-      "phone": "T茅l茅phone",
+      "phone": "T\u8305l\u8305phone",
       "email": "Email",
       "whatsapp": "WhatsApp"
     },
@@ -171,10 +171,10 @@
     }
   },
   "footer": {
-    "description": "Fabricant professionnel de v锚tements tactiques pour les march茅s militaire, policier, outdoor et de secours. OEM/ODM bienvenue.",
+    "description": "Fabricant professionnel de v\u951Atements tactiques pour les march\u8305s militaire, policier, outdoor et de secours. OEM/ODM bienvenue.",
     "quickLinks": "Liens Rapides",
     "products": "Produits",
     "contact": "Contact",
-    "copyright": "漏 {year} WearTac. Tous droits r茅serv茅s."
+    "copyright": "\u6F0F {year} WearTac. Tous droits r\u8305serv\u8305s."
   }
 }
