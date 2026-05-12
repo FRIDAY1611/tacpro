@@ -49,8 +49,8 @@ export async function POST(request: NextRequest) {
               create: {
                 productId: product.id,
                 productNameEn: product.nameEn,
-                productNameZh: product.nameZh,
-                productSku: product.sku,
+                productNameZh: product.nameZh || undefined,
+                productSku: product.sku || undefined,
               },
             }
           : undefined,

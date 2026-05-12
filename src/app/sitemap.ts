@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next'
 import { prisma } from '@/lib/prisma'
 
+const locales = ['en', 'zh', 'es', 'fr', 'ar', 'ru']
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://weartac.com'
 
@@ -10,11 +12,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/about',
     '/contact',
     '/inquiry',
+    '/blog',
   ]
 
   const routes: MetadataRoute.Sitemap = []
 
-  for (const locale of ['en', 'zh']) {
+  for (const locale of locales) {
     for (const route of staticRoutes) {
       routes.push({
         url: `${baseUrl}/${locale}${route}`,
@@ -36,12 +39,33 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }
 
   for (const product of products) {
-    for (const locale of ['en', 'zh']) {
+    for (const locale of locales) {
       routes.push({
         url: `${baseUrl}/${locale}/products/${product.slug}`,
         lastModified: product.updatedAt,
         changeFrequency: 'weekly',
         priority: 0.6,
+      })
+    }
+  }
+
+  let blogPosts: Array<{ slug: string; updatedAt: Date }> = []
+  try {
+    blogPosts = await prisma.blogPost.findMany({
+      where: { isPublished: true },
+      select: { slug: true, updatedAt: true },
+    })
+  } catch {
+    // DB not available during build or runtime
+  }
+
+  for (const post of blogPosts) {
+    for (const locale of locales) {
+      routes.push({
+        url: `${baseUrl}/${locale}/blog/${post.slug}`,
+        lastModified: post.updatedAt,
+        changeFrequency: 'monthly',
+        priority: 0.5,
       })
     }
   }

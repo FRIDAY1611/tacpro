@@ -14,8 +14,16 @@ model Category {
 
   nameEn      String
   nameZh      String
+  nameEs      String?
+  nameFr      String?
+  nameAr      String?
+  nameRu      String?
   descriptionEn String?
   descriptionZh String?
+  descriptionEs String?
+  descriptionFr String?
+  descriptionAr String?
+  descriptionRu String?
 
   products    Product[]
   createdAt   DateTime   @default(now())
@@ -33,11 +41,23 @@ model Product {
   sortOrder       Int       @default(0)
 
   nameEn          String
-  nameZh          String
+  nameZh          String?
+  nameEs          String?
+  nameFr          String?
+  nameAr          String?
+  nameRu          String?
   descriptionEn   String?
   descriptionZh   String?
+  descriptionEs   String?
+  descriptionFr   String?
+  descriptionAr   String?
+  descriptionRu   String?
   shortDescEn     String?
   shortDescZh     String?
+  shortDescEs     String?
+  shortDescFr     String?
+  shortDescAr     String?
+  shortDescRu     String?
 
   specifications  String?
 
@@ -50,8 +70,16 @@ model Product {
 
   metaTitleEn     String?
   metaTitleZh     String?
+  metaTitleEs     String?
+  metaTitleFr     String?
+  metaTitleAr     String?
+  metaTitleRu     String?
   metaDescEn      String?
   metaDescZh      String?
+  metaDescEs      String?
+  metaDescFr      String?
+  metaDescAr      String?
+  metaDescRu      String?
 
   categoryId      String?
   category        Category? @relation(fields: [categoryId], references: [id])
@@ -103,7 +131,7 @@ model InquiryItem {
   requirements    String?
 
   productNameEn   String
-  productNameZh   String
+  productNameZh   String?
   productSku      String?
 
   inquiry         Inquiry   @relation(fields: [inquiryId], references: [id], onDelete: Cascade)
@@ -149,6 +177,42 @@ model AdminUser {
   role            String    @default("admin")
   lastLoginAt     DateTime?
   createdAt       DateTime  @default(now())
+}
+
+model BlogPost {
+  id            String    @id @default(cuid())
+  slug          String    @unique
+  isPublished   Boolean   @default(false)
+  publishedAt   DateTime?
+  coverImage    String?
+  category      String?
+
+  titleEn       String
+  titleZh       String?
+  titleEs       String?
+  titleFr       String?
+  titleAr       String?
+  titleRu       String?
+
+  excerptEn     String?
+  excerptZh     String?
+  excerptEs     String?
+  excerptFr     String?
+  excerptAr     String?
+  excerptRu     String?
+
+  contentEn     String?
+  contentZh     String?
+  contentEs     String?
+  contentFr     String?
+  contentAr     String?
+  contentRu     String?
+
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([slug])
+  @@index([isPublished, publishedAt])
 }
 
 enum InquiryStatus {

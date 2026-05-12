@@ -3,6 +3,8 @@ import { getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { Link } from '@/i18n/routing'
 import { prisma } from '@/lib/prisma'
+import { getLocalizedField } from '@/lib/i18n-utils'
+import type { Locale } from '@/i18n/config'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
@@ -30,8 +32,9 @@ export async function generateMetadata({
 
   if (!product) return {}
 
-  const title = locale === 'zh' ? product.metaTitleZh || product.nameZh : product.metaTitleEn || product.nameEn
-  const description = locale === 'zh' ? product.metaDescZh : product.metaDescEn
+  const loc = locale as Locale
+  const title = getLocalizedField(product, loc, 'metaTitle') || getLocalizedField(product, loc, 'name') || ''
+  const description = getLocalizedField(product, loc, 'metaDesc') || ''
 
   return {
     title,
@@ -51,6 +54,7 @@ export default async function ProductDetailPage({
 }) {
   const { locale, slug } = await params
   setRequestLocale(locale)
+  const loc = locale as Locale
 
   const t = await getTranslations({ locale })
   const productsMessages = t.raw('products') as {
@@ -119,7 +123,7 @@ export default async function ProductDetailPage({
             </Link>
             <span className="mx-2">/</span>
             <span className="text-gray-900">
-              {locale === 'zh' ? product.nameZh : product.nameEn}
+              {getLocalizedField(product, loc, 'name')}
             </span>
           </nav>
         </div>
@@ -135,7 +139,7 @@ export default async function ProductDetailPage({
                 {product.mainImage ? (
                   <img
                     src={product.mainImage}
-                    alt={locale === 'zh' ? product.nameZh : product.nameEn}
+                    alt={getLocalizedField(product, loc, 'name') || ''}
                     className="w-full h-full object-cover"
                   />
                 ) : (
@@ -160,7 +164,7 @@ export default async function ProductDetailPage({
               <div className="flex items-center gap-3 mb-4">
                 {product.category && (
                   <Badge variant="secondary">
-                    {locale === 'zh' ? product.category.nameZh : product.category.nameEn}
+                    {getLocalizedField(product.category, loc, 'name')}
                   </Badge>
                 )}
                 {product.isCustomizable && (
@@ -169,11 +173,11 @@ export default async function ProductDetailPage({
               </div>
 
               <h1 className="text-3xl md:text-4xl font-bold mb-4">
-                {locale === 'zh' ? product.nameZh : product.nameEn}
+                {getLocalizedField(product, loc, 'name')}
               </h1>
 
               <p className="text-lg text-gray-600 mb-6">
-                {locale === 'zh' ? product.shortDescZh : product.shortDescEn}
+                {getLocalizedField(product, loc, 'shortDesc')}
               </p>
 
               {product.moq && (
@@ -213,7 +217,7 @@ export default async function ProductDetailPage({
                   <div className="bg-gray-50 rounded-xl p-4 overflow-hidden">
                     <img
                       src={product.drawing}
-                      alt={locale === 'zh' ? '技术图纸' : 'Technical Drawing'}
+                      alt={getLocalizedField(product, loc, 'name') || 'Technical Drawing'}
                       className="w-full h-auto rounded-lg"
                     />
                   </div>
@@ -230,14 +234,14 @@ export default async function ProductDetailPage({
           </div>
 
           {/* Description */}
-          {(locale === 'zh' ? product.descriptionZh : product.descriptionEn) && (
+          {getLocalizedField(product, loc, 'description') && (
             <div className="mt-16">
               <h2 className="text-2xl font-semibold mb-6">
                 {productsMessages.detail.description}
               </h2>
               <div className="prose prose-gray max-w-none">
                 <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-                  {locale === 'zh' ? product.descriptionZh : product.descriptionEn}
+                  {getLocalizedField(product, loc, 'description')}
                 </p>
               </div>
             </div>
@@ -257,7 +261,7 @@ export default async function ProductDetailPage({
                         {related.mainImage ? (
                           <img
                             src={related.mainImage}
-                            alt={locale === 'zh' ? related.nameZh : related.nameEn}
+                            alt={getLocalizedField(related, loc, 'name') || ''}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                           />
                         ) : (
@@ -268,7 +272,7 @@ export default async function ProductDetailPage({
                       </div>
                       <CardContent className="p-4">
                         <h3 className="font-semibold line-clamp-1">
-                          {locale === 'zh' ? related.nameZh : related.nameEn}
+                          {getLocalizedField(related, loc, 'name')}
                         </h3>
                       </CardContent>
                     </Card>

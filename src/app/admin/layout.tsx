@@ -22,6 +22,7 @@ export default async function AdminLayout({
           </div>
           <div className="flex items-center gap-4 text-sm">
             <a href="/admin/products" className="hover:text-gray-300">Products</a>
+            <a href="/admin/blog" className="hover:text-gray-300">Blog</a>
             <a href="/admin/inquiries" className="hover:text-gray-300">Inquiries</a>
             <form action="/admin/api/logout" method="post">
               <button type="submit" className="hover:text-gray-300">Logout</button>

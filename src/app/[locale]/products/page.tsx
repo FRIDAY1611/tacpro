@@ -2,6 +2,8 @@ import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { Link } from '@/i18n/routing'
 import { prisma } from '@/lib/prisma'
+import { getLocalizedField } from '@/lib/i18n-utils'
+import type { Locale } from '@/i18n/config'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -49,10 +51,11 @@ export default async function ProductsPage({
   ])
 
   const totalPages = Math.ceil(total / pageSize)
+  const loc = locale as Locale
 
   // Helper to get translated category name, fallback to DB name, then slug
-  const getCatName = (cat: { slug: string; nameZh: string; nameEn: string }) => {
-    return productsMessages.categories[cat.slug] || (locale === 'zh' ? cat.nameZh : cat.nameEn) || cat.slug
+  const getCatName = (cat: { slug: string; nameZh: string; nameEn: string; nameEs: string | null; nameFr: string | null; nameAr: string | null; nameRu: string | null }) => {
+    return productsMessages.categories[cat.slug] || getLocalizedField(cat, loc, 'name') || cat.slug
   }
 
   return (
@@ -113,7 +116,7 @@ export default async function ProductsPage({
                             {product.mainImage ? (
                               <img
                                 src={product.mainImage}
-                                alt={locale === 'zh' ? product.nameZh : product.nameEn}
+                                alt={getLocalizedField(product, loc, 'name') || ''}
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               />
                             ) : (
@@ -129,10 +132,10 @@ export default async function ProductsPage({
                           </div>
                           <CardContent className="p-5">
                             <h3 className="font-semibold text-lg mb-2 line-clamp-1">
-                              {locale === 'zh' ? product.nameZh : product.nameEn}
+                              {getLocalizedField(product, loc, 'name')}
                             </h3>
                             <p className="text-sm text-gray-500 line-clamp-2 mb-3">
-                              {locale === 'zh' ? product.shortDescZh : product.shortDescEn}
+                              {getLocalizedField(product, loc, 'shortDesc')}
                             </p>
                             <div className="flex items-center justify-between">
                               {product.moq && (

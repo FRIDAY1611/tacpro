@@ -6,6 +6,8 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Factory, Shield, Settings, Globe, Award, CheckCircle } from 'lucide-react'
 import { prisma } from '@/lib/prisma'
+import { getLocalizedField } from '@/lib/i18n-utils'
+import type { Locale } from '@/i18n/config'
 import { ScrollReveal, StaggerContainer } from '@/components/ui/scroll-reveal'
 
 export default async function HomePage({
@@ -15,6 +17,7 @@ export default async function HomePage({
 }) {
   const { locale } = await params
   setRequestLocale(locale)
+  const loc = locale as Locale
 
   const t = await getTranslations({ locale })
   const homeMessages = t.raw('home') as {
@@ -117,7 +120,7 @@ export default async function HomePage({
                       {product.mainImage ? (
                         <img
                           src={product.mainImage}
-                          alt={locale === 'zh' ? product.nameZh : product.nameEn}
+                          alt={getLocalizedField(product, loc, 'name') || ''}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       ) : (
@@ -128,10 +131,10 @@ export default async function HomePage({
                     </div>
                     <CardContent className="p-4">
                       <h3 className="font-semibold text-lg mb-2 line-clamp-1">
-                        {locale === 'zh' ? product.nameZh : product.nameEn}
+                        {getLocalizedField(product, loc, 'name')}
                       </h3>
                       <p className="text-sm text-gray-500 line-clamp-2">
-                        {locale === 'zh' ? product.shortDescZh : product.shortDescEn}
+                        {getLocalizedField(product, loc, 'shortDesc')}
                       </p>
                     </CardContent>
                   </Card>
