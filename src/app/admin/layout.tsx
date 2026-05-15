@@ -1,18 +1,8 @@
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
-
-export default async function AdminLayout({
+export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const cookieStore = await cookies()
-  const adminSession = cookieStore.get('admin_session')
-
-  if (!adminSession && !process.env.ADMIN_BYPASS) {
-    redirect('/admin/login')
-  }
-
   return (
     <div className="min-h-screen bg-gray-50">
       <nav className="bg-gray-900 text-white">
