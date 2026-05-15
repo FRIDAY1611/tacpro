@@ -21,6 +21,7 @@ export default async function AboutPage({
       title: string
       p1: string
       p2: string
+      p3: string
     }
     factory: {
       title: string
@@ -93,6 +94,7 @@ export default async function AboutPage({
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>{aboutMessages.story.p1}</p>
                 <p>{aboutMessages.story.p2}</p>
+                <p>{aboutMessages.story.p3}</p>
               </div>
             </ScrollReveal>
           </div>
