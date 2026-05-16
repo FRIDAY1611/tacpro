@@ -9,12 +9,12 @@ export default async function AdminBlogPage() {
   return (
     <div>
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-bold">Blog Posts</h1>
+        <h1 className="text-3xl font-bold">博客管理</h1>
         <Link
           href="/admin/blog/new"
           className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90"
         >
-          Add Post
+          新增文章
         </Link>
       </div>
 
@@ -22,11 +22,11 @@ export default async function AdminBlogPage() {
         <table className="w-full">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Title</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Category</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Status</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Date</th>
-              <th className="text-right p-4 text-sm font-medium text-gray-600">Actions</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">标题</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">分类</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">状态</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">发布日期</th>
+              <th className="text-right p-4 text-sm font-medium text-gray-600">操作</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
@@ -45,12 +45,12 @@ export default async function AdminBlogPage() {
                         : 'bg-gray-100 text-gray-800'
                     }`}
                   >
-                    {post.isPublished ? 'Published' : 'Draft'}
+                    {post.isPublished ? '已发布' : '草稿'}
                   </span>
                 </td>
                 <td className="p-4 text-sm text-gray-500">
                   {post.publishedAt
-                    ? new Date(post.publishedAt).toLocaleDateString()
+                    ? new Date(post.publishedAt).toLocaleDateString('zh-CN')
                     : '-'}
                 </td>
                 <td className="p-4 text-right">
@@ -58,7 +58,7 @@ export default async function AdminBlogPage() {
                     href={`/admin/blog/${post.id}/edit`}
                     className="text-primary hover:underline text-sm"
                   >
-                    Edit
+                    编辑
                   </Link>
                 </td>
               </tr>
@@ -66,7 +66,7 @@ export default async function AdminBlogPage() {
           </tbody>
         </table>
         {posts.length === 0 && (
-          <div className="p-8 text-center text-gray-500">No blog posts found</div>
+          <div className="p-8 text-center text-gray-500">暂无文章</div>
         )}
       </div>
     </div>

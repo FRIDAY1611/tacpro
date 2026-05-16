@@ -10,12 +10,12 @@ export default async function AdminProductsPage() {
   return (
     <div>
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-bold">Products</h1>
+        <h1 className="text-3xl font-bold">产品管理</h1>
         <Link
           href="/admin/products/new"
           className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90"
         >
-          Add Product
+          新增产品
         </Link>
       </div>
 
@@ -23,12 +23,12 @@ export default async function AdminProductsPage() {
         <table className="w-full">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Product</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Category</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">产品名称</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">分类</th>
               <th className="text-left p-4 text-sm font-medium text-gray-600">SKU</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">MOQ</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Status</th>
-              <th className="text-right p-4 text-sm font-medium text-gray-600">Actions</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">起订量</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">状态</th>
+              <th className="text-right p-4 text-sm font-medium text-gray-600">操作</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
@@ -39,7 +39,7 @@ export default async function AdminProductsPage() {
                   <div className="text-sm text-gray-500">{product.nameZh}</div>
                 </td>
                 <td className="p-4 text-sm">
-                  {product.category?.nameEn || 'Uncategorized'}
+                  {product.category?.nameZh || product.category?.nameEn || '未分类'}
                 </td>
                 <td className="p-4 text-sm">{product.sku || '-'}</td>
                 <td className="p-4 text-sm">{product.moq || '-'}</td>
@@ -49,7 +49,7 @@ export default async function AdminProductsPage() {
                       ? 'bg-green-100 text-green-800'
                       : 'bg-gray-100 text-gray-800'
                   }`}>
-                    {product.isActive ? 'Active' : 'Inactive'}
+                    {product.isActive ? '已上架' : '已下架'}
                   </span>
                 </td>
                 <td className="p-4 text-right">
@@ -57,7 +57,7 @@ export default async function AdminProductsPage() {
                     href={`/admin/products/${product.id}/edit`}
                     className="text-primary hover:underline text-sm"
                   >
-                    Edit
+                    编辑
                   </Link>
                 </td>
               </tr>
@@ -65,7 +65,7 @@ export default async function AdminProductsPage() {
           </tbody>
         </table>
         {products.length === 0 && (
-          <div className="p-8 text-center text-gray-500">No products found</div>
+          <div className="p-8 text-center text-gray-500">暂无产品</div>
         )}
       </div>
     </div>

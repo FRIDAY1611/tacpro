@@ -26,10 +26,10 @@ export default function AdminLoginPage() {
         router.push('/admin')
         router.refresh()
       } else {
-        setError('Invalid credentials')
+        setError('账号或密码错误')
       }
     } catch {
-      setError('Something went wrong')
+      setError('网络错误，请重试')
     } finally {
       setLoading(false)
     }
@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h1 className="text-2xl font-bold mb-6 text-center">WearTac Admin</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">WearTac 后台管理</h1>
         {error && (
           <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-md text-sm">
             {error}
@@ -47,7 +47,7 @@ export default function AdminLoginPage() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Email
+              邮箱
             </label>
             <input
               type="email"
@@ -59,7 +59,7 @@ export default function AdminLoginPage() {
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Password
+              密码
             </label>
             <input
               type="password"
@@ -74,7 +74,7 @@ export default function AdminLoginPage() {
             disabled={loading}
             className="w-full bg-primary text-white py-2 rounded-md hover:bg-primary/90 disabled:opacity-50"
           >
-            {loading ? 'Signing in...' : 'Sign In'}
+            {loading ? '登录中...' : '登录'}
           </button>
         </form>
       </div>

@@ -19,7 +19,7 @@ export default async function EditProductPage({
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-8">Edit Product</h1>
+      <h1 className="text-3xl font-bold mb-8">编辑产品</h1>
       <ProductForm
         initial={{
           ...product,

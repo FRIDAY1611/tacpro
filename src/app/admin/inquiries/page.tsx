@@ -7,21 +7,29 @@ export default async function AdminInquiriesPage() {
     orderBy: { createdAt: 'desc' },
   })
 
+  const statusMap: Record<string, string> = {
+    PENDING: '待处理',
+    PROCESSING: '处理中',
+    QUOTED: '已报价',
+    CLOSED: '已关闭',
+    SPAM: '垃圾询盘',
+  }
+
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-8">Inquiries</h1>
+      <h1 className="text-3xl font-bold mb-8">询盘管理</h1>
 
       <div className="bg-white rounded-lg shadow-sm overflow-hidden">
         <table className="w-full">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Inquiry No</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Company</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Contact</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Items</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Status</th>
-              <th className="text-left p-4 text-sm font-medium text-gray-600">Date</th>
-              <th className="text-right p-4 text-sm font-medium text-gray-600">Actions</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">询盘编号</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">公司</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">联系人</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">产品数</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">状态</th>
+              <th className="text-left p-4 text-sm font-medium text-gray-600">日期</th>
+              <th className="text-right p-4 text-sm font-medium text-gray-600">操作</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
@@ -47,18 +55,18 @@ export default async function AdminInquiriesPage() {
                       ? 'bg-purple-100 text-purple-800'
                       : 'bg-green-100 text-green-800'
                   }`}>
-                    {inquiry.status}
+                    {statusMap[inquiry.status] || inquiry.status}
                   </span>
                 </td>
                 <td className="p-4 text-sm text-gray-500">
-                  {new Date(inquiry.createdAt).toLocaleDateString()}
+                  {new Date(inquiry.createdAt).toLocaleDateString('zh-CN')}
                 </td>
                 <td className="p-4 text-right">
                   <Link
                     href={`/admin/inquiries/${inquiry.id}`}
                     className="text-primary hover:underline text-sm"
                   >
-                    View
+                    查看
                   </Link>
                 </td>
               </tr>
@@ -66,7 +74,7 @@ export default async function AdminInquiriesPage() {
           </tbody>
         </table>
         {inquiries.length === 0 && (
-          <div className="p-8 text-center text-gray-500">No inquiries found</div>
+          <div className="p-8 text-center text-gray-500">暂无询盘</div>
         )}
       </div>
     </div>

@@ -16,7 +16,7 @@ export default async function EditBlogPage({
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-8">Edit Blog Post</h1>
+      <h1 className="text-3xl font-bold mb-8">编辑文章</h1>
       <BlogForm
         initial={{
           ...post,

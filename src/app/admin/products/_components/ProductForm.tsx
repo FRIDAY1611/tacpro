@@ -218,7 +218,7 @@ export default function ProductForm({
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Sort Order</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">排序</label>
             <input
               type="number"
               value={product.sortOrder}
@@ -235,7 +235,7 @@ export default function ProductForm({
               onChange={(e) => updateField('isActive', e.target.checked)}
               className="w-4 h-4"
             />
-            <span className="text-sm text-gray-700">Active</span>
+            <span className="text-sm text-gray-700">上架</span>
           </label>
           <label className="flex items-center gap-2">
             <input
@@ -244,7 +244,7 @@ export default function ProductForm({
               onChange={(e) => updateField('isFeatured', e.target.checked)}
               className="w-4 h-4"
             />
-            <span className="text-sm text-gray-700">Featured</span>
+            <span className="text-sm text-gray-700">推荐</span>
           </label>
           <label className="flex items-center gap-2">
             <input
@@ -253,17 +253,17 @@ export default function ProductForm({
               onChange={(e) => updateField('isCustomizable', e.target.checked)}
               className="w-4 h-4"
             />
-            <span className="text-sm text-gray-700">Customizable</span>
+            <span className="text-sm text-gray-700">可定制</span>
           </label>
         </div>
       </section>
 
       {/* Images */}
       <section className="bg-white rounded-lg shadow-sm p-6 space-y-4">
-        <h2 className="text-xl font-semibold mb-4">Images</h2>
+        <h2 className="text-xl font-semibold mb-4">图片</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Main Image URL</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">主图 URL</label>
             <input
               type="text"
               value={product.mainImage}
@@ -273,7 +273,7 @@ export default function ProductForm({
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Drawing URL</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">图纸 URL</label>
             <input
               type="text"
               value={product.drawing}
@@ -284,7 +284,7 @@ export default function ProductForm({
           </div>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">Gallery Images (one URL per line)</label>
+          <label className="block text-sm font-medium text-gray-700 mb-1">图库图片（每行一个URL）</label>
           <textarea
             value={product.images}
             onChange={(e) => updateField('images', e.target.value)}
@@ -296,7 +296,7 @@ export default function ProductForm({
 
       {/* Specifications */}
       <section className="bg-white rounded-lg shadow-sm p-6 space-y-4">
-        <h2 className="text-xl font-semibold mb-4">Specifications (JSON)</h2>
+        <h2 className="text-xl font-semibold mb-4">规格参数（JSON）</h2>
         <textarea
           value={product.specifications}
           onChange={(e) => updateField('specifications', e.target.value)}
@@ -307,7 +307,7 @@ export default function ProductForm({
 
       {/* Multilingual Content */}
       <section className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-xl font-semibold mb-4">Multilingual Content</h2>
+        <h2 className="text-xl font-semibold mb-4">多语言内容</h2>
         <Tabs defaultValue="En">
           <TabsList className="mb-4">
             {locales.map((loc) => (
@@ -318,7 +318,7 @@ export default function ProductForm({
             <TabsContent key={loc.key} value={loc.key} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Name {loc.key === 'En' && '*'}
+                  名称 {loc.key === 'En' && '*'}
                 </label>
                 <input
                   type="text"
@@ -329,7 +329,7 @@ export default function ProductForm({
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Short Description</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">短描述</label>
                 <input
                   type="text"
                   value={(product as any)[`shortDesc${loc.key}`]}
@@ -338,7 +338,7 @@ export default function ProductForm({
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">详细描述</label>
                 <textarea
                   value={(product as any)[`description${loc.key}`]}
                   onChange={(e) => updateField(`description${loc.key}` as keyof Product, e.target.value)}
@@ -346,7 +346,7 @@ export default function ProductForm({
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Meta Title</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">SEO 标题</label>
                 <input
                   type="text"
                   value={(product as any)[`metaTitle${loc.key}`]}
@@ -355,7 +355,7 @@ export default function ProductForm({
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Meta Description</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">SEO 描述</label>
                 <textarea
                   value={(product as any)[`metaDesc${loc.key}`]}
                   onChange={(e) => updateField(`metaDesc${loc.key}` as keyof Product, e.target.value)}
@@ -373,14 +373,14 @@ export default function ProductForm({
           disabled={loading}
           className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 disabled:opacity-50"
         >
-          {loading ? 'Saving...' : isEdit ? 'Update Product' : 'Create Product'}
+          {loading ? '保存中...' : isEdit ? '更新产品' : '创建产品'}
         </button>
         <button
           type="button"
           onClick={() => router.push('/admin/products')}
           className="bg-gray-200 text-gray-800 px-6 py-2 rounded-md hover:bg-gray-300"
         >
-          Cancel
+          取消
         </button>
       </div>
     </form>

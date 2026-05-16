@@ -16,28 +16,28 @@ export default async function AdminDashboard() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-8">Dashboard</h1>
+      <h1 className="text-3xl font-bold mb-8">仪表盘</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="text-3xl font-bold text-primary">{productCount}</div>
-          <div className="text-gray-600">Total Products</div>
+          <div className="text-gray-600">产品总数</div>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="text-3xl font-bold text-primary">{inquiryCount}</div>
-          <div className="text-gray-600">Total Inquiries</div>
+          <div className="text-gray-600">询盘总数</div>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="text-3xl font-bold text-orange-500">{pendingInquiryCount}</div>
-          <div className="text-gray-600">Pending Inquiries</div>
+          <div className="text-gray-600">待处理询盘</div>
         </div>
       </div>
 
       <div className="bg-white rounded-lg shadow-sm">
         <div className="p-6 border-b border-gray-200 flex items-center justify-between">
-          <h2 className="text-xl font-semibold">Recent Inquiries</h2>
+          <h2 className="text-xl font-semibold">最近询盘</h2>
           <Link href="/admin/inquiries" className="text-primary hover:underline text-sm">
-            View All
+            查看全部
           </Link>
         </div>
         <div className="divide-y divide-gray-200">
@@ -56,15 +56,15 @@ export default async function AdminDashboard() {
                 </span>
               </div>
               <div className="text-sm text-gray-500">
-                {inquiry.contactName} · {inquiry.email} · {inquiry.items.length} items
+                {inquiry.contactName} · {inquiry.email} · {inquiry.items.length} 个产品
               </div>
               <div className="text-xs text-gray-400 mt-1">
-                {inquiry.inquiryNo} · {new Date(inquiry.createdAt).toLocaleDateString()}
+                {inquiry.inquiryNo} · {new Date(inquiry.createdAt).toLocaleDateString('zh-CN')}
               </div>
             </div>
           ))}
           {recentInquiries.length === 0 && (
-            <div className="p-6 text-gray-500 text-center">No inquiries yet</div>
+            <div className="p-6 text-gray-500 text-center">暂无询盘</div>
           )}
         </div>
       </div>

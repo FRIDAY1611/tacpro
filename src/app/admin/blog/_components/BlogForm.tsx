@@ -121,7 +121,7 @@ export default function BlogForm({ initial }: { initial?: BlogPost }) {
 
       {/* General Info */}
       <section className="bg-white rounded-lg shadow-sm p-6 space-y-4">
-        <h2 className="text-xl font-semibold mb-4">General Information</h2>
+        <h2 className="text-xl font-semibold mb-4">基本信息</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Slug *</label>
@@ -175,7 +175,7 @@ export default function BlogForm({ initial }: { initial?: BlogPost }) {
 
       {/* Multilingual Content */}
       <section className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-xl font-semibold mb-4">Multilingual Content</h2>
+        <h2 className="text-xl font-semibold mb-4">多语言内容</h2>
         <Tabs defaultValue="En">
           <TabsList className="mb-4">
             {locales.map((loc) => (
@@ -186,7 +186,7 @@ export default function BlogForm({ initial }: { initial?: BlogPost }) {
             <TabsContent key={loc.key} value={loc.key} className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Title {loc.key === 'En' && '*'}
+                  标题 {loc.key === 'En' && '*'}
                 </label>
                 <input
                   type="text"
@@ -197,7 +197,7 @@ export default function BlogForm({ initial }: { initial?: BlogPost }) {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Excerpt</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">摘要</label>
                 <textarea
                   value={(post as any)[`excerpt${loc.key}`]}
                   onChange={(e) => updateField(`excerpt${loc.key}` as keyof BlogPost, e.target.value)}
@@ -205,7 +205,7 @@ export default function BlogForm({ initial }: { initial?: BlogPost }) {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Content</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">正文</label>
                 <textarea
                   value={(post as any)[`content${loc.key}`]}
                   onChange={(e) => updateField(`content${loc.key}` as keyof BlogPost, e.target.value)}
@@ -223,14 +223,14 @@ export default function BlogForm({ initial }: { initial?: BlogPost }) {
           disabled={loading}
           className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90 disabled:opacity-50"
         >
-          {loading ? 'Saving...' : isEdit ? 'Update Post' : 'Create Post'}
+          {loading ? '保存中...' : isEdit ? '更新文章' : '创建文章'}
         </button>
         <button
           type="button"
           onClick={() => router.push('/admin/blog')}
           className="bg-gray-200 text-gray-800 px-6 py-2 rounded-md hover:bg-gray-300"
         >
-          Cancel
+          取消
         </button>
       </div>
     </form>
