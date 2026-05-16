@@ -8,6 +8,17 @@ import { getLocalizedField } from '@/lib/i18n-utils'
 import type { Locale } from '@/i18n/config'
 import { ScrollReveal, StaggerContainer } from '@/components/ui/scroll-reveal'
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const msg = t.raw('blog') as { title: string; subtitle: string }
+  return {
+    title: `${msg.title} | WearTac`,
+    description: msg.subtitle,
+    openGraph: { title: msg.title, description: msg.subtitle },
+  }
+}
+
 export default async function BlogPage({
   params,
 }: {
@@ -54,7 +65,7 @@ export default async function BlogPage({
               >
                 <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center overflow-hidden">
                   {article.coverImage ? (
-                    <img
+                    <img loading="lazy"
                       src={article.coverImage}
                       alt={getLocalizedField(article, loc, 'title') || ''}
                       className="w-full h-full object-cover"

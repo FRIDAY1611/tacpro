@@ -1,6 +1,16 @@
-import { setRequestLocale } from 'next-intl/server'
-import { getTranslations } from 'next-intl/server'
+import { setRequestLocale, getTranslations } from 'next-intl/server'
 import { InquiryForm } from './InquiryForm'
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const msg = t.raw('inquiry') as { title: string; subtitle: string }
+  return {
+    title: `${msg.title} | WearTac`,
+    description: msg.subtitle,
+    openGraph: { title: msg.title, description: msg.subtitle },
+  }
+}
 
 export default async function InquiryPage({
   params,

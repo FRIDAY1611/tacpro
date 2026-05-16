@@ -6,6 +6,17 @@ import { Card, CardContent } from '@/components/ui/card'
 import { MapPin, Phone, Mail, MessageCircle, Clock, ArrowRight } from 'lucide-react'
 import { ScrollReveal } from '@/components/ui/scroll-reveal'
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const msg = t.raw('contact') as { title: string; subtitle: string }
+  return {
+    title: `${msg.title} | WearTac`,
+    description: msg.subtitle,
+    openGraph: { title: msg.title, description: msg.subtitle },
+  }
+}
+
 export default async function ContactPage({
   params,
 }: {
@@ -32,7 +43,7 @@ export default async function ContactPage({
   }
 
   const contactItems = [
-    { icon: Mail, label: contactMessages.info.email, value: 'info@tacpro.com', href: 'mailto:info@tacpro.com' },
+    { icon: Mail, label: contactMessages.info.email, value: 'wang@weartac.com', href: 'mailto:wang@weartac.com' },
     { icon: MessageCircle, label: contactMessages.info.whatsapp, value: '+86 XXX XXXX XXXX', href: 'https://wa.me/86XXXXXXXXXX' },
     { icon: Phone, label: contactMessages.info.phone, value: '+86 XXX XXXX XXXX', href: 'tel:+86XXXXXXXXXX' },
     { icon: MapPin, label: contactMessages.info.address, value: 'Industrial Zone, City, Province, China', href: null },

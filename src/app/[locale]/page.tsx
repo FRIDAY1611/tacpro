@@ -10,6 +10,20 @@ import { getLocalizedField } from '@/lib/i18n-utils'
 import type { Locale } from '@/i18n/config'
 import { ScrollReveal, StaggerContainer } from '@/components/ui/scroll-reveal'
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const homeMessages = t.raw('home') as { hero: { description: string } }
+  return {
+    title: 'WearTac - Professional Tactical Equipment Manufacturer',
+    description: homeMessages.hero.description,
+    openGraph: {
+      title: 'WearTac - Professional Tactical Equipment Manufacturer',
+      description: homeMessages.hero.description,
+    },
+  }
+}
+
 export default async function HomePage({
   params,
 }: {
@@ -57,6 +71,30 @@ export default async function HomePage({
 
   return (
     <div>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'WearTac',
+            description: homeMessages.hero.description,
+            url: process.env.NEXT_PUBLIC_SITE_URL || 'https://weartac.com',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              email: 'wang@weartac.com',
+              contactType: 'sales',
+              availableLanguage: ['English', 'Chinese'],
+            },
+            sameAs: [
+              'https://facebook.com/weartac',
+              'https://instagram.com/weartac',
+              'https://linkedin.com/company/weartac',
+            ],
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="absolute inset-0 opacity-10">
@@ -118,7 +156,7 @@ export default async function HomePage({
                   <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
                     <div className="aspect-square bg-gray-100 overflow-hidden">
                       {product.mainImage ? (
-                        <img
+                        <img loading="lazy"
                           src={product.mainImage}
                           alt={getLocalizedField(product, loc, 'name') || ''}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

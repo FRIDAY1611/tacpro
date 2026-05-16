@@ -4,6 +4,17 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Shield, Siren, Cross, TreePine } from 'lucide-react'
 import { ScrollReveal, StaggerContainer } from '@/components/ui/scroll-reveal'
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const msg = t.raw('cases') as { title: string; subtitle: string }
+  return {
+    title: `${msg.title} | WearTac`,
+    description: msg.subtitle,
+    openGraph: { title: msg.title, description: msg.subtitle },
+  }
+}
+
 export default async function CasesPage({
   params,
 }: {

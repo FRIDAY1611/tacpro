@@ -23,6 +23,7 @@ const inquirySchema = z.object({
   address: z.string().optional(),
   message: z.string().max(2000).optional(),
   targetDate: z.string().optional(),
+  _hp: z.string().max(0).optional(),
 })
 
 type InquiryFormData = z.infer<typeof inquirySchema>
@@ -127,6 +128,12 @@ export function InquiryForm({ locale, messages }: InquiryFormProps) {
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            {/* Honeypot - invisible to users, traps bots */}
+            <div className="absolute left-[-9999px]" aria-hidden="true">
+              <Label htmlFor="_hp">Website</Label>
+              <Input id="_hp" tabIndex={-1} autoComplete="off" {...register('_hp')} />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label htmlFor="companyName">{messages.form.companyName} *</Label>

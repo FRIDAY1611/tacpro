@@ -5,6 +5,17 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Factory, Users, Package, Globe, Award, Shield, Scissors, ClipboardCheck, Shirt, SearchCheck } from 'lucide-react'
 import { ScrollReveal, StaggerContainer } from '@/components/ui/scroll-reveal'
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const msg = t.raw('about') as { title: string; subtitle: string }
+  return {
+    title: `${msg.title} | WearTac`,
+    description: msg.subtitle,
+    openGraph: { title: msg.title, description: msg.subtitle },
+  }
+}
+
 export default async function AboutPage({
   params,
 }: {
@@ -203,7 +214,7 @@ export default async function AboutPage({
                 <Card key={cert.id} className="p-6 text-center border-0 shadow-sm">
                   <div className="aspect-square bg-gray-100 rounded-lg mb-4 flex items-center justify-center">
                     {cert.image ? (
-                      <img src={cert.image} alt={locale === 'zh' ? cert.nameZh : cert.nameEn} className="w-full h-full object-contain" />
+                      <img loading="lazy" src={cert.image} alt={locale === 'zh' ? cert.nameZh : cert.nameEn} className="w-full h-full object-contain" />
                     ) : (
                       <Award className="w-12 h-12 text-gray-400" />
                     )}

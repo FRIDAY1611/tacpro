@@ -91,7 +91,7 @@ export default async function BlogDetailPage({
 
         {post.coverImage && (
           <div className="aspect-video bg-gray-100 rounded-xl overflow-hidden mb-8">
-            <img
+            <img loading="lazy"
               src={post.coverImage}
               alt={title || ''}
               className="w-full h-full object-cover"

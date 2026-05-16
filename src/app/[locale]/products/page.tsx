@@ -9,6 +9,17 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Shield } from 'lucide-react'
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  const t = await getTranslations({ locale })
+  const msg = t.raw('products') as { title: string; subtitle: string }
+  return {
+    title: `${msg.title} | WearTac`,
+    description: msg.subtitle,
+    openGraph: { title: msg.title, description: msg.subtitle },
+  }
+}
+
 export default async function ProductsPage({
   params,
   searchParams,
@@ -114,7 +125,7 @@ export default async function ProductsPage({
                         <Card className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
                           <div className="aspect-square bg-gray-100 overflow-hidden relative">
                             {product.mainImage ? (
-                              <img
+                              <img loading="lazy"
                                 src={product.mainImage}
                                 alt={getLocalizedField(product, loc, 'name') || ''}
                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -10,6 +10,8 @@ interface FooterProps {
     quickLinks: string
     products: string
     contact: string
+    privacy: string
+    terms: string
     copyright: string
   }
   navMessages: {
@@ -131,7 +133,7 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
           <div>
             <h3 className="text-white font-semibold mb-4">{messages.contact}</h3>
             <ul className="space-y-3 text-sm text-gray-400 mb-6">
-              <li>info@weartac.com</li>
+              <li>wang@weartac.com</li>
               <li>+86 XXX XXXX XXXX</li>
               <li>WhatsApp: +86 XXX XXXX XXXX</li>
               <li>China</li>
@@ -154,8 +156,17 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
-          {messages.copyright.replace('{year}', currentYear.toString())}
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+          <p>{messages.copyright.replace('{year}', currentYear.toString())}</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="hover:text-white transition-colors">
+              {messages.privacy}
+            </Link>
+            <span className="text-gray-700">|</span>
+            <Link href="/terms" className="hover:text-white transition-colors">
+              {messages.terms}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -112,8 +112,44 @@ export default async function ProductDetailPage({
     take: 4,
   })
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://weartac.com'
+
   return (
     <div className="min-h-screen pt-20">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name: getLocalizedField(product, loc, 'name'),
+            description: getLocalizedField(product, loc, 'shortDesc'),
+            image: product.mainImage || undefined,
+            sku: product.sku || undefined,
+            brand: { '@type': 'Brand', name: 'WearTac' },
+            offers: {
+              '@type': 'Offer',
+              availability: 'https://schema.org/InStock',
+              priceCurrency: 'USD',
+              price: '0',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: locale === 'zh' ? '产品中心' : 'Products', item: `${siteUrl}/${locale}/products` },
+              { '@type': 'ListItem', position: 2, name: getLocalizedField(product, loc, 'name') },
+            ],
+          }),
+        }}
+      />
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="container mx-auto px-4">
@@ -137,7 +173,7 @@ export default async function ProductDetailPage({
             <div>
               <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden mb-4">
                 {product.mainImage ? (
-                  <img
+                  <img loading="lazy"
                     src={product.mainImage}
                     alt={getLocalizedField(product, loc, 'name') || ''}
                     className="w-full h-full object-cover"
@@ -152,7 +188,7 @@ export default async function ProductDetailPage({
                 <div className="grid grid-cols-4 gap-4">
                   {images.slice(0, 4).map((img, i) => (
                     <div key={i} className="aspect-square bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
-                      <img src={img} alt="" className="w-full h-full object-cover" />
+                      <img loading="lazy" src={img} alt="" className="w-full h-full object-cover" />
                     </div>
                   ))}
                 </div>
@@ -215,7 +251,7 @@ export default async function ProductDetailPage({
                     {productsMessages.detail.drawing}
                   </h2>
                   <div className="bg-gray-50 rounded-xl p-4 overflow-hidden">
-                    <img
+                    <img loading="lazy"
                       src={product.drawing}
                       alt={getLocalizedField(product, loc, 'name') || 'Technical Drawing'}
                       className="w-full h-auto rounded-lg"
@@ -259,7 +295,7 @@ export default async function ProductDetailPage({
                     <Card className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300">
                       <div className="aspect-square bg-gray-100 overflow-hidden">
                         {related.mainImage ? (
-                          <img
+                          <img loading="lazy"
                             src={related.mainImage}
                             alt={getLocalizedField(related, loc, 'name') || ''}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -34,6 +34,8 @@ export default async function LocaleLayout({
     quickLinks: string
     products: string
     contact: string
+    privacy: string
+    terms: string
     copyright: string
   }
 

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { nanoid } from 'nanoid'
 import { z } from 'zod'
+import { sendInquiryEmail } from '@/lib/email'
 
 const inquirySchema = z.object({
   companyName: z.string().min(2),
@@ -14,11 +15,47 @@ const inquirySchema = z.object({
   targetDate: z.string().optional(),
   productSlug: z.string().optional(),
   locale: z.enum(['en', 'zh']),
+  _hp: z.string().max(0).optional(), // honeypot - must be empty
 })
+
+// Simple in-memory rate limiter (IP-based)
+const rateLimit = new Map<string, { count: number; resetAt: number }>()
+const RATE_LIMIT_MAX = 3 // max submissions
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000 // 1 hour
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now()
+  const entry = rateLimit.get(ip)
+  if (!entry || now > entry.resetAt) {
+    rateLimit.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW })
+    return true
+  }
+  if (entry.count >= RATE_LIMIT_MAX) return false
+  entry.count++
+  return true
+}
 
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting
+    const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+      || request.headers.get('x-real-ip')
+      || 'unknown'
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        { success: false, error: 'Too many submissions. Please try again later.' },
+        { status: 429 }
+      )
+    }
+
     const body = await request.json()
+
+    // Honeypot check: if the hidden field is filled, it's a bot
+    if (body._hp) {
+      // Return success to not tip off bots, but don't save
+      return NextResponse.json({ success: true, inquiryNo: 'INQ-VERIFIED' })
+    }
+
     const validated = inquirySchema.parse(body)
 
     // Generate inquiry number
@@ -58,8 +95,19 @@ export async function POST(request: NextRequest) {
       include: { items: true },
     })
 
-    // TODO: Send email notification
-    // await sendInquiryEmail(inquiry)
+    // Send email notification (non-blocking)
+    sendInquiryEmail({
+      inquiryNo: inquiry.inquiryNo,
+      companyName: inquiry.companyName,
+      contactName: inquiry.contactName,
+      email: inquiry.email,
+      phone: inquiry.phone,
+      country: inquiry.country,
+      address: inquiry.address,
+      message: inquiry.message,
+      targetDate: inquiry.targetDate,
+      productName: product ? `${product.nameEn} (${product.sku || ''})` : null,
+    }).catch((err) => console.error('Background email send failed:', err))
 
     return NextResponse.json({
       success: true,
