@@ -75,7 +75,7 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
   ]
 
   const socialLinks = [
-    { icon: WhatsAppIcon, href: 'https://wa.me/86XXXXXXXXXX', label: 'WhatsApp', color: 'hover:bg-green-600 hover:text-white' },
+    { icon: WhatsAppIcon, href: 'https://wa.me/8613689993888', label: 'WhatsApp', color: 'hover:bg-green-600 hover:text-white' },
     { icon: InstagramIcon, href: 'https://instagram.com/weartac', label: 'Instagram', color: 'hover:bg-pink-600 hover:text-white' },
     { icon: FacebookIcon, href: 'https://facebook.com/weartac', label: 'Facebook', color: 'hover:bg-blue-600 hover:text-white' },
     { icon: LinkedInIcon, href: 'https://linkedin.com/company/weartac', label: 'LinkedIn', color: 'hover:bg-blue-700 hover:text-white' },
@@ -134,8 +134,8 @@ export function Footer({ locale, messages, navMessages }: FooterProps) {
             <h3 className="text-white font-semibold mb-4">{messages.contact}</h3>
             <ul className="space-y-3 text-sm text-gray-400 mb-6">
               <li>wang@weartac.com</li>
-              <li>+86 XXX XXXX XXXX</li>
-              <li>WhatsApp: +86 XXX XXXX XXXX</li>
+              <li>+86 136 8999 3888</li>
+              <li>WhatsApp: +86 136 8999 3888</li>
               <li>China</li>
             </ul>
             <div className="flex items-center gap-3">

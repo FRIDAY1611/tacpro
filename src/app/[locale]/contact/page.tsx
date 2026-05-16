@@ -44,8 +44,8 @@ export default async function ContactPage({
 
   const contactItems = [
     { icon: Mail, label: contactMessages.info.email, value: 'wang@weartac.com', href: 'mailto:wang@weartac.com' },
-    { icon: MessageCircle, label: contactMessages.info.whatsapp, value: '+86 XXX XXXX XXXX', href: 'https://wa.me/86XXXXXXXXXX' },
-    { icon: Phone, label: contactMessages.info.phone, value: '+86 XXX XXXX XXXX', href: 'tel:+86XXXXXXXXXX' },
+    { icon: MessageCircle, label: contactMessages.info.whatsapp, value: '+86 136 8999 3888', href: 'https://wa.me/8613689993888' },
+    { icon: Phone, label: contactMessages.info.phone, value: '+86 136 8999 3888', href: 'tel:+8613689993888' },
     { icon: MapPin, label: contactMessages.info.address, value: 'Industrial Zone, City, Province, China', href: null },
   ]
 
