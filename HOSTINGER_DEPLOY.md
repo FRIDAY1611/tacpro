@@ -1,14 +1,15 @@
-# Hostinger Node.js 閮ㄧ讲鎸囧崡
+# Hostinger Node.js 部署指南
 
-## 鍓嶇疆鍑嗗
+## 前置准备
 
-1. 涓€涓?Hostinger Node.js 涓绘満濂楅锛圔usiness 鎴栨洿楂樻帹鑽愶級
-2. 宸茬粦瀹氬埌涓绘満鐨勫煙鍚?3. Node.js 鐗堟湰瑕佹眰锛歷20 鎴栨洿楂?
+1. 一个 Hostinger Node.js 主机套餐（Business 或更高推荐）
+2. 已绑定到主机的域名
+3. Node.js 版本要求：v20 或更高
 ---
 
-## 閮ㄧ讲鏂瑰紡涓€锛氶€氳繃 Git 鑷姩閮ㄧ讲锛堟帹鑽愶級
+## 部署方式一：通过 Git 自动部署（推荐）
 
-### 姝ラ 1锛氬皢浠ｇ爜鎺ㄩ€佸埌 GitHub/GitLab
+### 步骤 1：将代码推送到 GitHub/GitLab
 
 ```bash
 git init
@@ -19,123 +20,140 @@ git remote add origin https://github.com/YOUR_USERNAME/tacpro.git
 git push -u origin main
 ```
 
-### 姝ラ 2锛氬湪 Hostinger hPanel 涓厤缃?
-1. 鐧诲綍 hPanel 鈫?缃戠珯 鈫?閫夋嫨浣犵殑鍩熷悕
-2. 杩涘叆 **Git** 鎴?**Auto Deploy** 鏉垮潡
-3. 杩炴帴浣犵殑 GitHub/GitLab 浠撳簱
-4. 璁剧疆鑷姩閮ㄧ讲鍒嗘敮锛歚main`
-5. 璁剧疆 **Node.js 鐗堟湰**锛氶€夋嫨 `20.x`
-6. 璁剧疆 **鍚姩鍛戒护**锛?   ```
+### 步骤 2：在 Hostinger hPanel 中配置
+1. 登录 hPanel → 网站 → 选择你的域名
+2. 进入 **Git** 或 **Auto Deploy** 板块
+3. 连接你的 GitHub/GitLab 仓库
+4. 设置自动部署分支：`main`
+5. 设置 **Node.js 版本**：选择 `20.x`
+6. 设置 **启动命令**：
+   ```
    npm start
    ```
-7. 淇濆瓨閰嶇疆
+7. 保存配置
 
-### 姝ラ 3锛氶厤缃幆澧冨彉閲?
-1. 鍦?hPanel 涓壘鍒?**鐜鍙橀噺** / **Node.js Configuration**
-2. 娣诲姞浠ヤ笅鍙橀噺锛?
-| 鍙橀噺鍚?| 鍊?| 璇存槑 |
+### 步骤 3：配置环境变量
+1. 在 hPanel 中找到 **环境变量** / **Node.js Configuration**
+2. 添加以下变量：
+| 变量名 | 值 | 说明 |
 |--------|----|----|
-| `DATABASE_URL` | `file:./dev.db` | SQLite 鏁版嵁搴撹矾寰?|
-| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.com` | 浣犵殑缃戠珯鍩熷悕 |
-| `NEXT_PUBLIC_SITE_NAME` | `WearTac` | 缃戠珯鍚嶇О |
-| `ADMIN_USERNAME` | `admin` | 鍚庡彴鐧诲綍鐢ㄦ埛鍚?|
-| `ADMIN_PASSWORD` | `your-secure-password` | 鍚庡彴鐧诲綍瀵嗙爜锛堝姟蹇呬慨鏀癸級 |
-| `NODE_ENV` | `production` | 鐢熶骇鐜鏍囧織 |
+| `DATABASE_URL` | `file:./dev.db` | SQLite 数据库路径 |
+| `NEXT_PUBLIC_SITE_URL` | `https://your-domain.com` | 你的网站域名 |
+| `NEXT_PUBLIC_SITE_NAME` | `WearTac` | 网站名称 |
+| `ADMIN_USERNAME` | `admin` | 后台登录用户名 |
+| `ADMIN_PASSWORD` | `your-secure-password` | 后台登录密码（务必修改） |
+| `NODE_ENV` | `production` | 生产环境标志 |
+| `SMTP_HOST` | `smtp.hostinger.com` | SMTP 服务器 |
+| `SMTP_PORT` | `465` | SMTP 端口（SSL） |
+| `SMTP_SECURE` | `true` | 启用 SSL |
+| `SMTP_USER` | `wang@weartac.com` | 邮箱地址 |
+| `SMTP_PASS` | `your-email-password` | 邮箱密码 |
+| `SMTP_FROM` | `wang@weartac.com` | 发件人地址 |
+| `ADMIN_EMAIL` | `wang@weartac.com` | 管理员邮箱 |
 
-3. 淇濆瓨鐜鍙橀噺
+3. 保存环境变量
 
-### 姝ラ 4锛氶娆℃瀯寤?
-1. 鍦?hPanel 涓墦寮€ **鏂囦欢绠＄悊鍣?* 鎴?**SSH 缁堢**
-2. 纭繚鍦ㄩ」鐩牴鐩綍锛坄public_html` 鎴栦綘閰嶇疆鐨勭洰褰曪級
-3. 杩愯棣栨鏋勫缓鍛戒护锛?
+### 步骤 4：首次构建
+1. 在 hPanel 中打开 **文件管理器** 或 **SSH 终端**
+2. 确保在项目根目录（如 `public_html` 或你配置的目录）
+3. 运行首次构建命令：
 ```bash
 npm install
 npx prisma migrate deploy
 npm run build
 ```
 
-4. 鍦?hPanel 涓?**閲嶅惎 Node.js 搴旂敤**
+4. 在 hPanel 中 **重启 Node.js 应用**
 
 ---
 
-## 閮ㄧ讲鏂瑰紡浜岋細鎵嬪姩涓婁紶锛圸IP / FTP锛?
-### 姝ラ 1锛氭湰鍦板噯澶?
-鍦ㄦ湰鍦伴」鐩牴鐩綍杩愯锛?
+## 部署方式二：手动上传（FTP / ZIP）
+### 步骤 1：本地准备
+在本地项目根目录运行：
 ```bash
-# 1. 纭繚渚濊禆宸插畨瑁?npm install
+# 1. 确保依赖已安装
+npm install
 
-# 2. 杩愯鏁版嵁搴撹縼绉?npx prisma migrate deploy
+# 2. 运行数据库迁移
+npx prisma migrate deploy
 
-# 3. 鏋勫缓鐢熶骇鐗堟湰
+# 3. 构建生产版本
 npm run build
 ```
 
-### 姝ラ 2锛氭墦鍖呬笂浼?
-1. 灏嗛」鐩枃浠跺す锛?*鎺掗櫎** `node_modules` 鍜?`.next`锛夋墦鍖呬负 ZIP
-2. 鐧诲綍 hPanel 鈫?鏂囦欢绠＄悊鍣?3. 涓婁紶鍒?`public_html`锛堟垨浣犵殑搴旂敤鐩綍锛?4. 瑙ｅ帇 ZIP 鏂囦欢
+### 步骤 2：打包上传
+1. 将项目文件夹（**排除** `node_modules` 和 `.next`）打包为 ZIP
+2. 登录 hPanel → 文件管理器
+3. 上传到 `public_html`（或你的应用目录）
+4. 解压 ZIP 文件
 
-### 姝ラ 3锛氬湪鏈嶅姟鍣ㄤ笂瀹夎渚濊禆骞舵瀯寤?
-閫氳繃 hPanel 鐨?**SSH 缁堢** 鎴?**Node.js 鎺у埗鍙?*锛?
+### 步骤 3：在服务器上安装依赖并构建
+通过 hPanel 的 **SSH 终端** 或 **Node.js 控制台**：
 ```bash
-cd ~/public_html  # 鎴栦綘鐨勯」鐩洰褰?npm install
+cd ~/public_html  # 或你的项目目录
+npm install
 npm run build
 ```
 
-### 姝ラ 4锛氶厤缃幆澧冨彉閲忓拰鍚姩
+### 步骤 4：配置环境变量和启动
 
-鍚?*鏂瑰紡涓€**鐨勬楠?3 鍜?4銆?
+同 **方式一** 的步骤 3 和 4。
 ---
 
-## 閮ㄧ讲鍚庢鏌ユ竻鍗?
-- [ ] 缃戠珯棣栭〉鍙互姝ｅ父璁块棶
-- [ ] 鍒囨崲璇█锛?en, /zh, /es, /fr, /ar, /ru锛夋甯?- [ ] 浜у搧鍒楄〃椤靛彲浠ュ姞杞?- [ ] 璇㈢洏琛ㄥ崟鍙互鎻愪氦
-- [ ] 鍚庡彴绠＄悊 `/admin` 鍙互鐧诲綍
-- [ ] 鏁版嵁搴撴枃浠?`dev.db` 鏈夊啓鍏ユ潈闄愶紙鑻ュ嚭鐜版潈闄愰敊璇紝璁句负 644 鎴?666锛?
+## 部署后检查清单
+- [ ] 网站首页可以正常访问
+- [ ] 切换语言（/en, /zh, /es, /fr, /ar, /ru）正常
+- [ ] 产品列表页可以加载
+- [ ] 询盘表单可以提交
+- [ ] 后台管理 `/admin` 可以登录
+- [ ] 数据库文件 `dev.db` 有写入权限（若出现权限错误，设为 644 或 666）
 ---
 
-## 甯歌闂
+## 常见问题
 
-### 1. 鏁版嵁搴撴潈闄愰敊璇?
-濡傛灉鐪嬪埌 `SQLITE_CANTOPEN` 鎴栨潈闄愰敊璇細
+### 1. 数据库权限错误
+如果看到 `SQLITE_CANTOPEN` 或权限错误：
 
 ```bash
 chmod 666 dev.db
 chmod 755 .
 ```
 
-### 2. Prisma Client 鏈敓鎴?
-濡傛灉鐪嬪埌 `@prisma/client` 鐩稿叧閿欒锛屾墜鍔ㄨ繍琛岋細
+### 2. Prisma Client 未生成
+如果看到 `@prisma/client` 相关错误，手动运行：
 
 ```bash
 npx prisma generate
 ```
 
-### 3. 绔彛鍐茬獊
+### 3. 端口冲突
 
-Hostinger Node.js 浼氳嚜鍔ㄥ垎閰嶇鍙ｃ€傜‘淇濅綘鐨勫惎鍔ㄥ懡浠ゆ槸 `npm start`锛堝嵆 `next start`锛夛紝Next.js 浼氳嚜鍔ㄨ鍙?`PORT` 鐜鍙橀噺銆?
-### 4. 鍐呭瓨涓嶈冻瀵艰嚧鏋勫缓澶辫触
+Hostinger Node.js 会自动分配端口。启动命令使用 `npm start`（即 `next start -p ${PORT:-3000}`）会自动读取 `PORT` 环境变量。
 
-濡傛灉 `npm run build` 鍥犲唴瀛樹笉瓒冲け璐ワ紝鑱旂郴 Hostinger 鍗囩骇濂楅锛屾垨鍦ㄦ湰鍦版瀯寤哄悗涓婁紶 `.next` 鏂囦欢澶癸紙涓嶆帹鑽愶紝浣嗗彲搴旀€ワ級銆?
-### 5. 闈欐€佽祫婧?404
+### 4. 内存不足导致构建失败
 
-纭繚 `public/` 鏂囦欢澶瑰唴鐨勫浘鐗囧拰瀛椾綋宸叉纭笂浼犮€?
+如果 `npm run build` 因内存不足失败，联系 Hostinger 升级套餐，或在本地构建后上传 `.next` 文件夹（不推荐，但可应急）。
+
+### 5. 静态资源 404
+
+确保 `public/` 文件夹内的图片和字体已正确上传。
 ---
 
-## 鏂囦欢璇存槑
+## 文件说明
 
-| 鏂囦欢/鐩綍 | 鏄惁蹇呴』涓婁紶 | 璇存槑 |
+| 文件/目录 | 是否必须上传 | 说明 |
 |-----------|-------------|------|
-| `src/` | 鏄?| 婧愪唬鐮?|
-| `prisma/` | 鏄?| 鏁版嵁搴撴ā鍨嬪拰杩佺Щ |
-| `public/` | 鏄?| 闈欐€佽祫婧?|
-| `.next/` | 鍚? | 鏋勫缓杈撳嚭锛堝彲鍦ㄦ湇鍔″櫒涓婄敓鎴愶級 |
-| `node_modules/` | 鍚?| 渚濊禆锛堝湪鏈嶅姟鍣ㄤ笂 `npm install`锛?|
-| `dev.db` | 鏄?| SQLite 鏁版嵁搴撴枃浠讹紙宸叉湁鏁版嵁鍒欎笂浼狅級 |
-| `.env` | 鍚?| 鐜鍙橀噺鍦?hPanel 涓厤缃?|
+| `src/` | 是 | 源代码 |
+| `prisma/` | 是 | 数据库模型和迁移 |
+| `public/` | 是 | 静态资源 |
+| `.next/` | 否 | 构建输出（可在服务器上生成） |
+| `node_modules/` | 否 | 依赖（在服务器上 `npm install`） |
+| `dev.db` | 是 | SQLite 数据库文件（已有数据则上传） |
+| `.env` | 否 | 环境变量在 hPanel 中配置 |
 
-> *濡傛湇鍔″櫒鏋勫缓璧勬簮涓嶈冻锛屽彲鏈湴鏋勫缓鍚庝笂浼?`.next` 鏂囦欢澶广€?
+> *如服务器构建资源不足，可本地构建后上传 `.next` 文件夹。*
 ---
 
-## 鑱旂郴鏂瑰紡
+## 联系方式
 
-濡傛湁闂锛屾鏌?Hostinger 鏂囨。鎴栬仈绯诲叾瀹㈡湇銆備篃鍙互妫€鏌?Next.js 鍜?Prisma 瀹樻柟鏂囨。銆?
+如有问题，检查 Hostinger 文档或联系其客服。也可以检查 Next.js 和 Prisma 官方文档。
