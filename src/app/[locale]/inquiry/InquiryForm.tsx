@@ -79,7 +79,11 @@ export function InquiryForm({ locale, messages }: InquiryFormProps) {
 
       if (!response.ok) {
         const error = await response.json()
-        addToast(error.error || 'Submission failed', 'error')
+        const msg = error.errors
+          ? error.errors.map((e: any) => e.path?.join('.') + ': ' + e.message).join('; ')
+          : error.error || 'Submission failed'
+        addToast(msg, 'error')
+        console.error('Inquiry 400 details:', error)
         return
       }
 
