@@ -14,7 +14,7 @@ const inquirySchema = z.object({
   message: z.string().max(2000).optional(),
   targetDate: z.string().optional(),
   productSlug: z.string().optional(),
-  locale: z.enum(['en', 'zh']),
+  locale: z.enum(['en', 'zh', 'es', 'fr', 'ar', 'ru']),
   _hp: z.string().max(0).optional(), // honeypot - must be empty
 })
 
