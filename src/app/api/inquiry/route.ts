@@ -95,23 +95,32 @@ export async function POST(request: NextRequest) {
       include: { items: true },
     })
 
-    // Send email notification (non-blocking)
-    sendInquiryEmail({
-      inquiryNo: inquiry.inquiryNo,
-      companyName: inquiry.companyName,
-      contactName: inquiry.contactName,
-      email: inquiry.email,
-      phone: inquiry.phone,
-      country: inquiry.country,
-      address: inquiry.address,
-      message: inquiry.message,
-      targetDate: inquiry.targetDate,
-      productName: product ? `${product.nameEn} (${product.sku || ''})` : null,
-    }).catch((err) => console.error('Background email send failed:', err))
+    // Send email notification
+    let emailSent = false
+    let emailError: string | null = null
+    try {
+      emailSent = await sendInquiryEmail({
+        inquiryNo: inquiry.inquiryNo,
+        companyName: inquiry.companyName,
+        contactName: inquiry.contactName,
+        email: inquiry.email,
+        phone: inquiry.phone,
+        country: inquiry.country,
+        address: inquiry.address,
+        message: inquiry.message,
+        targetDate: inquiry.targetDate,
+        productName: product ? `${product.nameEn} (${product.sku || ''})` : null,
+      })
+    } catch (err) {
+      emailError = err instanceof Error ? err.message : String(err)
+      console.error('Email send failed:', emailError)
+    }
 
     return NextResponse.json({
       success: true,
       inquiryNo: inquiry.inquiryNo,
+      emailSent,
+      ...(emailError ? { emailError } : {}),
     })
   } catch (error) {
     console.error('Inquiry submission error:', error)

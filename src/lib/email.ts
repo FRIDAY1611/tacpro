@@ -69,6 +69,6 @@ Please log into the admin panel to respond.
     return true
   } catch (error) {
     console.error('Failed to send inquiry email:', error)
-    return false
+    throw error // propagate to API route for detailed error reporting
   }
 }
