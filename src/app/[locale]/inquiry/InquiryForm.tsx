@@ -74,7 +74,7 @@ export function InquiryForm({ locale, messages }: InquiryFormProps) {
       const response = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, productSlug, locale }),
+        body: JSON.stringify({ ...data, ...(productSlug ? { productSlug } : {}), locale }),
       })
 
       if (!response.ok) {

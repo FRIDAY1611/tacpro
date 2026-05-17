@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useState, useEffect } from 'react'
 import { Link, usePathname, useRouter } from '@/i18n/routing'
@@ -96,10 +96,8 @@ export function Header({ locale, messages }: HeaderProps) {
           <div className="flex items-center gap-3">
             {/* Language Switcher */}
             <DropdownMenu>
-              <DropdownMenuTrigger>
-                <Button variant="ghost" size="icon" className={scrolled ? 'text-gray-600' : 'text-white'}>
-                  <Globe className="h-5 w-5" />
-                </Button>
+              <DropdownMenuTrigger className={`inline-flex shrink-0 items-center justify-center rounded-lg text-sm font-medium transition-colors hover:opacity-80 h-9 w-9 ${scrolled ? 'text-gray-600' : 'text-white'}`}>
+                <Globe className="h-5 w-5" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 {locales.map((loc) => (
@@ -119,10 +117,8 @@ export function Header({ locale, messages }: HeaderProps) {
 
             {/* Mobile Menu */}
             <Sheet>
-              <SheetTrigger className="lg:hidden">
-                <Button variant="ghost" size="icon" className={scrolled ? 'text-gray-600' : 'text-white'}>
-                  <Menu className="h-6 w-6" />
-                </Button>
+              <SheetTrigger className={`lg:hidden inline-flex shrink-0 items-center justify-center rounded-lg text-sm font-medium transition-colors hover:opacity-80 h-9 w-9 ${scrolled ? 'text-gray-600' : 'text-white'}`}>
+                <Menu className="h-6 w-6" />
               </SheetTrigger>
               <SheetContent side={isRTL(locale) ? 'left' : 'right'} className="w-80">
                 <nav className="flex flex-col gap-4 mt-8">
@@ -151,4 +147,3 @@ export function Header({ locale, messages }: HeaderProps) {
     </header>
   )
 }
-
