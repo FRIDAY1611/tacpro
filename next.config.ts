@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  experimental: {
+    cpus: 2, // Limit build workers to prevent SQLite concurrent access corruption
+  },
 }
 
 export default withNextIntl(nextConfig)

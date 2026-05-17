@@ -1,5 +1,3 @@
-export const dynamic = 'force-dynamic'
-
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { prisma } from '@/lib/prisma'
