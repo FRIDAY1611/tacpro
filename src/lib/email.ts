@@ -13,10 +13,14 @@ interface InquiryEmailData {
   productName?: string | null
 }
 
+// Hostinger SMTP typically requires SSL on port 465
+// If you get "535 authentication failed", also check:
+// 1. Email account has "Remote SMTP" enabled in hPanel > Email > Manage
+// 2. Password is correct (not forwarding-only address)
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || '',
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: process.env.SMTP_SECURE === 'true',
+  host: process.env.SMTP_HOST || 'smtp.hostinger.com',
+  port: parseInt(process.env.SMTP_PORT || '465'),
+  secure: process.env.SMTP_SECURE !== 'false', // default to SSL
   auth: {
     user: process.env.SMTP_USER || '',
     pass: process.env.SMTP_PASS || '',
