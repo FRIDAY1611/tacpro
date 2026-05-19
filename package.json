@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
     "lint": "eslint",
-    "postinstall": "prisma generate && prisma migrate deploy && node prisma/seed.mjs"
+    "postinstall": "rm -f prisma/dev.db prisma/dev.db-journal prisma/dev.db-wal prisma/dev.db-shm && prisma generate && prisma migrate deploy && node prisma/seed.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",

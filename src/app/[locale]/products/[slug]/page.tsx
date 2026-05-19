@@ -9,7 +9,8 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
-import { Shield, Ruler } from 'lucide-react'
+import { ProductGallery } from '@/components/product-gallery'
+import { Ruler, Shield } from 'lucide-react'
 
 export async function generateStaticParams() {
   return []
@@ -170,30 +171,11 @@ export default async function ProductDetailPage({
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Images */}
-            <div>
-              <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden mb-4">
-                {product.mainImage ? (
-                  <img loading="lazy"
-                    src={product.mainImage}
-                    alt={getLocalizedField(product, loc, 'name') || ''}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    <Shield className="w-32 h-32" />
-                  </div>
-                )}
-              </div>
-              {images.length > 0 && (
-                <div className="grid grid-cols-4 gap-4">
-                  {images.slice(0, 4).map((img, i) => (
-                    <div key={i} className="aspect-square bg-gray-100 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity">
-                      <img loading="lazy" src={img} alt="" className="w-full h-full object-cover" />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            <ProductGallery
+              mainImage={product.mainImage}
+              images={images}
+              alt={getLocalizedField(product, loc, 'name') || ''}
+            />
 
             {/* Info */}
             <div>
